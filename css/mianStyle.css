@@ -489,10 +489,6 @@ p {
   margin-inline-end: 0px;
 }
 
-.section
-{
-  margin-left: 150px;
-}
 
 /*----------------------------------------*\
   #navigator
@@ -530,8 +526,6 @@ p {
   float: left;
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
   display: block;
 }
 #hot-deal
@@ -619,4 +613,111 @@ p {
   transition: 0.2s all;
 }
 
+/*----------------------------------------*\
+  #newsletter
+\*----------------------------------------*/
+
+#newsletter
+{
+  position:relative;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+#newsletter.section {
+  border-top: 2px solid #E4E7ED;
+  border-bottom: 3px solid #D10024;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.newsletter_container
+{
+  width: 1170px;
+  margin-top: 10px;
+  height:200px;
+  margin-left: 250px;
+  
+}
+.newsletter {
+  position: relative;
+  display: block;
+  text-align: center !important;
+}
+.newsletter p {
+  font-size: 24px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.newsletter form {
+  position: relative;
+  display: block;
+  max-width: 520px;
+  margin: 30px auto;
+  text-align: center !important;
+}
+.newsletter form .input {
+  width: calc(100% - 160px);
+  margin-right: -4px;
+  border-radius: 40px 0px 0px 40px;
+}
+
+.newsletter form .input {
+  width: calc(100% - 160px);
+  margin-right: -4px;
+  border-radius: 40px 0px 0px 40px;
+  cursor: pointer;
+}
+
+.newsletter form .newsletter-btn {
+  width: 160px;
+  height: 40px;
+  font-weight: 700;
+  background: #D10024;
+  color: #FFF;
+  border: none;
+  border-radius: 0px 40px 40px 0px;
+}
+.newsletter form:after {
+  content: "\f003";
+  font-family: FontAwesome;
+  position: absolute;
+  font-size: 160px;
+  color: #E4E7ED;
+  top: 15px;
+  -webkit-transform: translateY(-50%) rotate(
+15deg);
+  -ms-transform: translateY(-50%) rotate(15deg);
+  transform: translateY(-50%) rotate(
+15deg);
+  z-index: -1;
+  left: -90px;
+}
+.newsletter-follow {
+  position: relative;
+  display:inline-block;
+  text-align: center !important;
+}
+.newsletter .newsletter-follow li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.newsletter .newsletter-follow li a {
+  color: #898d96 !important;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #E4E7ED;
+  background-color: #FFF;
+}
+
+.newsletter .newsletter-follow li a:hover {
+  color: #ffffff !important;
+  background-color: rgb(255, 0, 0);
+}
 
