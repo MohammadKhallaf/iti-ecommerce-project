@@ -716,3 +716,8 @@ p {
   background-color: #FFF;
 }
 
+.newsletter .newsletter-follow li a:hover {
+  color: #ffffff !important;
+  background-color: rgb(255, 0, 0);
+}
+
