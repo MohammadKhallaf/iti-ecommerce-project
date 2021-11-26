@@ -523,10 +523,10 @@ p {
 .col-md-12
 {
   width: 100%;
-  float: left;
   position: relative;
   min-height: 1px;
   display: block;
+  float: left;
 }
 #hot-deal
 {
@@ -622,6 +622,7 @@ p {
   position:relative;
   margin-top: 30px;
   padding-top: 20px;
+  height: 300px;
 }
 #newsletter.section {
   border-top: 2px solid #E4E7ED;
@@ -636,13 +637,16 @@ p {
   width: 1170px;
   margin-top: 10px;
   height:200px;
-  margin-left: 250px;
+  margin-left: 150px;
   
 }
 .newsletter {
   position: relative;
   display: block;
   text-align: center !important;
+  width: 60%;
+  height: 300px;
+  margin: auto;
 }
 .newsletter p {
   font-size: 24px;
@@ -657,8 +661,9 @@ p {
   position: relative;
   display: block;
   max-width: 520px;
-  margin: 30px auto;
+  margin: 35px auto;
   text-align: center !important;
+  
 }
 .newsletter form .input {
   width: calc(100% - 160px);
@@ -670,7 +675,7 @@ p {
   width: calc(100% - 160px);
   margin-right: -4px;
   border-radius: 40px 0px 0px 40px;
-  cursor: pointer;
+  cursor: text;
 }
 
 .newsletter form .newsletter-btn {
@@ -701,6 +706,7 @@ p {
   position: relative;
   display:inline-block;
   text-align: center !important;
+  margin: 35px auto;
 }
 .newsletter .newsletter-follow li {
   display: inline-block;
@@ -716,8 +722,21 @@ p {
   background-color: #FFF;
 }
 
-.newsletter .newsletter-follow li a:hover {
-  color: #ffffff !important;
-  background-color: rgb(255, 0, 0);
+.newsletter .newsletter-follow li a:hover 
+{
+  color: #ff0000 !important;
+  background-color: rgb(240, 236, 236);
+}
+.newsletter form
+{
+  display: block;
+  position: relative;
+  float: right;
+}
+ul.newsletter-follow
+{
+  display: block;
+  position: relative;
+  float: left;
 }
 
