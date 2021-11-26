@@ -1,16 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
-</head>
-<body>
-    
-    <main>
-			
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <!-- single product details -->
+    <main class="product">
+      <!-- PRODUCT SUMMARY -->
+      <section class="product__summary">
+        <div class="summary__container">
+          <div class="summary__img">
+            <img src="res/img/product01.png" alt="" class="large__img" />
+            <div class="small__img__container">
+              <img src="res/img/product03.png" alt="" class="small__img" />
+              <img src="res/img/product06.png" alt="" class="small__img" />
+              <img src="res/img/product01.png" alt="" class="small__img" />
+            </div>
+          </div>
+          <div class="summary__description">
+            <h1>PRODUCT NAME</h1>
+            <div class="summary__review">
+              <div class="summary__stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="summary_rvs">
+                <span> 10 Review(s) | </span>
+                <a href="">Add your review</a>
+              </div>
+            </div>
+            <div class="summary__price">
+              <span>569$</span>
+              <span class="small-red-font">In stock</span>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ex
+              suscipit amet id, natus eveniet laborum vel voluptatem odit
+              laboriosam qui iure esse minima laudantium incidunt! Saepe nobis
+              excepturi nisi.
+            </p>
+            <div class="summary__buy">
+              <span>QTY</span>
+              <input type="number" />
+              <a href="" class="button"> ADD TO CART</a>
+            </div>
+            <div class="summary__footer">
+              <div class="wishlist">
+                <i class="far fa-heart"></i>
+                <span>ADD TO WISH LIST</span>
+              </div>
+              <div class="compare">
+                <i class="fas fa-th-list"></i>
+                <span>ADD TO COMPARE</span>
+                <div class="category">
+                  <span>CATEGORY :</span>
+                  <span>LAPTOP</span>
+                  <span>LOREM</span>
+                </div>
+                <div class="share_buttons">
+                  <span>SHARE:</span>
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-twitter-square"></i>
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- PRODUCT DETAILS -->
+      <section class="product__details">
+        <div class="details__header">
+          <div>
+            <hr>
+            <div class="details__header_titles">
+              <a href="#" class="small-red-font">Description</a>
+              <a href="#" class="small-red-font">Details</a>
+              <a href="#" class="small-red-font">Reviews(3)</a>  
+            </div>
+            <div class="details__section">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit, eaque expedita cum non saepe? Mollitia quasi placeat adipisci, necessitatibus architecto eveniet nulla deserunt id, ipsum quisquam in, dicta unde.</p>
+            </div>
+          </div>
+          <div style="font-weight: bold;"><br>HERE I WILL PUT SOME SORT OF THINGS BUT NOT NOW ...</div>
+        </div>
+      </section>
     </main>
+<setion class="related__products">
+  <h3 style="text-align: center;">
+    RELATED PRODUCTS
+  </h3>
+<div class="related__products__container">
+  <div class="related__item">
+ 
+      <img src="res/img/product09.png" alt="">
+      <p>gedededed</p>
+      <p>gedededed</p>
+      <p>gedededed</p>
+  </div>
+  <div class="related__item">
+ 
+      <img src="res/img/product09.png" alt="">
+      <p>gedededed</p>
+      <p>gedededed</p>
+      <p>gedededed</p>
+  </div>
+  <div class="related__item">
+ 
+      <img src="res/img/product09.png" alt="">
+      <p>gedededed</p>
+      <p>gedededed</p>
+      <p>gedededed</p>
+  </div>
+  <div class="related__item">
+ 
+      <img src="res/img/product09.png" alt="">
+      <p>gedededed</p>
+      <p>gedededed</p>
+      <p>gedededed</p>
+  </div>
+</div>
+</setion>
 
-</body>
+    <footer></footer>
+  </body>
 </html>
