@@ -132,4 +132,9 @@ justify-content: center;
   max-width: 200px;
 }
 /*---login---*/
+#name
+{
+  font-size: xx-large;
+  color: blueviolet;
+}
 /*---checkout---*/

@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-  </head>
-  <body>
-    <main></main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div id="login-form">
+    <div class="loginForm_container">
+      <form action="./index.html">
+        <label id="yourName" for="yourName">
+          Your Name</label>
+        <input type="text" required placeholder="Enter Your Name" name="yourNameInput" id="yourNameInput" pattern="">
+        <label for="email" id="email">
+          E-mail
+        </label>
+        <input type="email" name="emailInput" id="emailInput" required placeholder="Enter Your E-mail" pattern="">
+        <label for="phoneNumber" id="phoneNumber">Phone Number </label>
+        <input type="number" name="phoneNumberInput" id="phoneNumberInput" required placeholder="Enter Your Number"
+          pattern="">
+        <label for="password" id="password">Password</label>
+        <input type="password" id="passwordInput" name="passwordInput" required placeholder="Enter Password" pattern="">
+        <label for="re-password" id="re-password">Re-Password</label>
+        <input type="password" id="re-passwordInput" name="re-passwordInput" required placeholder="Re-enter Password"
+          pattern="">
+
+      </form>
+
+    </div>
+  </div>
+  <main></main>
+</body>
+
 </html>
