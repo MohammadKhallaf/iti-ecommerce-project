@@ -1082,13 +1082,13 @@ ul.newsletter-follow
   padding: 2px 10px;
   font-size: 12px;
 }
-.product .product-body {
+/* .product .product-body {
   position: relative;
   padding: 15px;
   background-color: #FFF;
   text-align: center;
   z-index: 20;
-}
+} */
 .product .product-body .product-category {
   text-transform: uppercase;
   font-size: 12px;
@@ -1118,7 +1118,7 @@ ul.newsletter-follow
 .product .product-body .product-rating>i.fa-star {
   color: #ef233c;
 }
-.product .product-body .product-btns>button {
+/* .product .product-body .product-btns>button {
   position: relative;
   width: 40px;
   height: 40px;
@@ -1128,66 +1128,36 @@ ul.newsletter-follow
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
-.product .product-body .product-btns>button .tooltipp {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -15px);
-  -ms-transform: translate(-50%, -15px);
-  transform: translate(-50%, -15px);
-  width: 150px;
-  padding: 10px;
-  font-size: 12px;
-  line-height: 10px;
-  background: #1e1f29;
-  color: #FFF;
-  text-transform: uppercase;
-  z-index: 10;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-.product .add-to-cart {
-  position: relative;
-  left: 1px;
-  right: 1px;
-  bottom: 1px;
-  padding: 15px;
-  background: #1e1f29;
+
+.product-btns{
+  width: 200px;
+  background-color: rgb(255, 255, 255);
   text-align: center;
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-  z-index: 2;
+} */
+.product-btns button
+{
+  margin: 10px;
+  padding: 10px;
 }
-.product .add-to-cart .add-to-cart-btn {
-  position: relative;
-  border: 2px solid transparent;
-  height: 40px;
-  padding: 0 30px;
-  background-color: #ef233c;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 40px;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-  visibility:visible !important;
+
+i.fa-eye , i.fa-shopping-cart
+{
+  font-size: 30px;
 }
-.product .add-to-cart .add-to-cart-btn>i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  color: #D10024;
-  opacity: 0;
-  visibility:visible !important;
-}
+
+i.fa-eye:hover , i.fa-shopping-cart:hover
+{
+  
+  color: #e00202;
+  
+  border-style:1px solid rgb(192, 185, 176) ;
+  border-radius: 50px;
+} 
+ 
+
+
+
+
 
 
 
