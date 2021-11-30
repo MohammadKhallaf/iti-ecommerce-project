@@ -44,6 +44,7 @@ body
 
 #top-header 
 {
+  position: relative;
   display: block;
   height: 40px;
   padding-top: 0px;
@@ -97,8 +98,6 @@ a
 
 #header 
 {
-  position: -webkit-sticky;
-  position: sticky;
   padding-top: 10px;
   padding-bottom: 5px;
   background-color: #15161D;
