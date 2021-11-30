@@ -60,3 +60,54 @@ function goPosition() {
   var url = "http://maps.google.com/maps/"+ "place/Gleem+Bay/@31.2428335,29.9564149,17z/data=!3m1!4b1!4m5!3m4!1s0x14f5c57ba821e56d:0x133d5c82c18cd7!8m2!3d31.2428335!4d29.9586036" ;
   window.open(url,'_blank');
 }
+
+//add to cart
+
+let carts=document.querySelectorAll('.fa-shopping-cart')
+
+for (let i=0;i<carts.length; i++)
+{
+  carts[i].addEventListener('click',()=>{ 
+    cartNumbers();
+  })
+}
+
+function onLoadCartNumbers1()
+{
+  let productNumbers = localStorage.getItem('cartNumbers');
+  if( productNumbers <1){
+    var x= document.getElementById('basketNumber')
+    x.remove();
+  }
+  else{
+    document.getElementById('basket').appendChild(document.createElement("SPAN"));
+    document.querySelector('.cart span').textContent= productNumbers;
+  }
+  // console.log("first")
+}
+function onLoadCartNumbers()
+{
+    document.getElementById('basket').appendChild(document.createElement("SPAN"));
+    document.querySelector('.cart span').textContent= productNumbers;
+  
+}
+
+function cartNumbers(){
+  var h1 = document.getElementsByTagName("span")[0];   // Get the first <h1> element in the document
+  var att = document.createAttribute("id");       // Create a "class" attribute
+  att.value = "basketNumber";                           // Set the value of the class attribute
+  h1.setAttributeNode(att);
+  
+  let productNumbers = localStorage.getItem('cartNumbers');
+  productNumbers = parseInt(productNumbers);
+
+  if( productNumbers ){
+    localStorage.setItem('cartNumbers', productNumbers+1);
+    document.querySelector('.cart span').textContent= productNumbers+1;
+  }else {
+    localStorage.setItem('cartNumbers',1);
+    document.querySelector('.cart span').textContent=1;
+  }
+  // console.log("first")
+}
+onLoadCartNumbers1()

@@ -31,16 +31,23 @@ body
 /*----------------------------------------*\
   #header
 \*----------------------------------------*/
-
+#hed-con
+{
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000000000;
+}
 
 /*Top header*/
 
 #top-header 
 {
   display: block;
-  height: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: #1E1F29; 
 }
 .topHeader_container {
@@ -92,10 +99,10 @@ a
 {
   position: -webkit-sticky;
   position: sticky;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   background-color: #15161D;
-  height: 100px;
+  height: 90px;
   border-top: 2px solid;
   border-bottom: 3px solid #D10024;
 }
@@ -321,10 +328,10 @@ p {
 #bottom-footer
 {
   width: 100%;
-  height: 50px;
-  background-color: rgb(216, 73, 101);
+  height: 30px;
+  background-color: #D10024;
   text-align:center;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 
@@ -968,7 +975,12 @@ ul.newsletter-follow
   background-color: rgb(255, 255, 255);
   text-align: center;
 } */
-.product-btns button
+
+.product-name a
+{
+  color: #222222 !important;
+}
+.product-btns div
 {
   margin: 10px;
   padding: 10px;
@@ -981,10 +993,79 @@ i.fa-eye , i.fa-shopping-cart
 
 i.fa-eye:hover , i.fa-shopping-cart:hover
 {
-  color: #e00202;
   border-style:1px solid rgb(192, 185, 176) ;
   border-radius: 50px;
+  cursor: pointer;
 } 
+i.fa-eye:hover
+{
+  color: #e00202;
+}
+i.fa-shopping-cart:active
+{
+  color: #e00202;
+}
+.product-btns div {
+  display: inline-block;
+  visibility: hidden;
+
+}
+.product:hover .product-btns div {
+  visibility: visible;
+  display:inline-block;
+  background-color:#E4E7ED;
+  text-align: center;
+  text-align: center;
+  border-radius:50%;
+}
+.tooltipp
+{
+  visibility: hidden;
+}
+.product-btns div:hover .tooltipp
+{
+  visibility:visible;
+}
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+
+[data-title]:after {
+  content: attr(data-title);
+  background-color:#ffffff;
+  color: #111;
+  font-size: 100%;
+  position: absolute;
+  padding: 1px 5px 2px 5px;
+  bottom: -1.6em;
+  left: -20px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #222222;
+  opacity: 0;
+  border: 1px solid #bbb;
+  z-index: 99999;
+  visibility: hidden;
+}
+[data-title] {
+  position: relative;
+}
+
+#basketNumber {
+  position: absolute;
+  right: -16px;
+  top: -15px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px ;
+  color: #FFF;
+  background-color: #D10024;
+}
+
  
 
 
