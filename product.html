@@ -7,131 +7,275 @@
     <title>Product Page</title>
     <link href="./css/all.min.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/product.css" />
+
+    <script src="./js/product.js" defer></script>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <nav style="height: 100px"></nav>
+    </header>
     <!-- single product details -->
-    <main class="product">
-      <!-- PRODUCT SUMMARY -->
-      <section class="product__summary">
-        <div class="summary__container">
-          <div class="summary__img">
-            <img src="res/img/product01.png" alt="" class="large__img" />
-            <div class="small__img__container">
-              <img src="res/img/product03.png" alt="" class="small__img" />
-              <img src="res/img/product06.png" alt="" class="small__img" />
-              <img src="res/img/product01.png" alt="" class="small__img" />
-            </div>
-          </div>
-          <div class="summary__description">
-            <h1>PRODUCT NAME</h1>
-            <div class="summary__review">
-              <div class="summary__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <div class="summary_rvs">
-                <span> 10 Review(s) | </span>
-                <a href="">Add your review</a>
-              </div>
-            </div>
-            <div class="summary__price">
-              <span>569$</span>
-              <span class="small-red-font">In stock</span>
-            </div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ex
-              suscipit amet id, natus eveniet laborum vel voluptatem odit
-              laboriosam qui iure esse minima laudantium incidunt! Saepe nobis
-              excepturi nisi.
-            </p>
-            <div class="summary__buy">
-              <span>QTY</span>
-              <input type="number" />
-              <a href="" class="button"> ADD TO CART</a>
-            </div>
-            <div class="summary__footer">
-              <div class="wishlist">
-                <i class="far fa-heart"></i>
-                <span>ADD TO WISH LIST</span>
-              </div>
-              <div class="compare">
-                <i class="fas fa-th-list"></i>
-                <span>ADD TO COMPARE</span>
-                <div class="category">
-                  <span>CATEGORY :</span>
-                  <span>LAPTOP</span>
-                  <span>LOREM</span>
-                </div>
-                <div class="share_buttons">
-                  <span>SHARE:</span>
-                  <i class="fab fa-facebook-square"></i>
-                  <i class="fab fa-twitter-square"></i>
-                  <i class="fas fa-envelope"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- PRODUCT DETAILS -->
-      <section class="product__details">
-        <div class="details__header">
-          <div>
-            <hr>
-            <div class="details__header_titles">
-              <a href="#" class="small-red-font">Description</a>
-              <a href="#" class="small-red-font">Details</a>
-              <a href="#" class="small-red-font">Reviews(3)</a>  
-            </div>
-            <div class="details__section">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit, eaque expedita cum non saepe? Mollitia quasi placeat adipisci, necessitatibus architecto eveniet nulla deserunt id, ipsum quisquam in, dicta unde.</p>
-            </div>
-          </div>
-          <div style="font-weight: bold;"><br>HERE I WILL PUT SOME SORT OF THINGS BUT NOT NOW ...</div>
-        </div>
-      </section>
-    </main>
-<setion class="related__products">
-  <h3 style="text-align: center;">
-    RELATED PRODUCTS
-  </h3>
-<div class="related__products__container">
-  <div class="related__item">
- 
-      <img src="res/img/product09.png" alt="">
-      <p>gedededed</p>
-      <p>gedededed</p>
-      <p>gedededed</p>
-  </div>
-  <div class="related__item">
- 
-      <img src="res/img/product09.png" alt="">
-      <p>gedededed</p>
-      <p>gedededed</p>
-      <p>gedededed</p>
-  </div>
-  <div class="related__item">
- 
-      <img src="res/img/product09.png" alt="">
-      <p>gedededed</p>
-      <p>gedededed</p>
-      <p>gedededed</p>
-  </div>
-  <div class="related__item">
- 
-      <img src="res/img/product09.png" alt="">
-      <p>gedededed</p>
-      <p>gedededed</p>
-      <p>gedededed</p>
-  </div>
-</div>
-</setion>
+    <div class="page__content">
 
-    <footer></footer>
+      <main class="product">
+        <!-- PRODUCT SUMMARY -->
+        <section class="product__summary">
+          <div class="summary__container">
+            <div class="summary__img">
+              <img src="res/img/product01.png" alt="" class="large__img" />
+              <i class="fas fa-angle-right arrow_right"></i>
+              <i class="fas fa-angle-left arrow_left"></i>
+              <div class="small__img__container">
+                <img src="res/img/product03.png" alt="" class="small__img" />
+                <img src="res/img/product06.png" alt="" class="small__img" />
+                <img src="res/img/product01.png" alt="" class="small__img" />
+              </div>
+            </div>
+            
+            <div class="summary__description">
+              <h1>PRODUCT NAME</h1>
+              <div class="summary__review">
+                <div class="summary__stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="summary_rvs">
+                  <span> 10 Review(s) | </span>
+                  <a href="" id="add-review">Add your review</a>
+                </div>
+              </div>
+              <div class="summary__price">
+                <span id="price__span" class="medium-red-font">569$</span>
+                <span class="small-red-font">In stock</span>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ex
+                suscipit amet id, natus eveniet laborum vel voluptatem odit
+                laboriosam qui iure esse minima laudantium incidunt! Saepe nobis
+                excepturi nisi.
+              </p>
+              <div class="summary__buy">
+                <div class="summary__quantity">
+                  <span>QTY</span>
+                  <input type="number" />
+                </div>
+
+                <a href="" class="btn" id="add-to-cart"> ADD TO CART</a>
+              </div>
+              <div class="summary__footer">
+                <div class="wishlist">
+                  <a href="" id="add-to-wish">
+                    <i class="far fa-heart"></i>
+                    <span>ADD TO WISH LIST</span>
+                  </a>
+                </div>
+                <div class="compare">
+                  <a href="" id="add-to-compare">
+                    <i class="fas fa-th-list"></i>
+                    <span>ADD TO COMPARE</span>
+                  </a></div>
+                  <div class="category">
+                    <span>CATEGORY :</span>
+                    <span>LAPTOP</span>
+                    <span>LOREM</span>
+                  </div>
+                  <div class="share__buttons">
+                    <span>SHARE:</span>
+                    <a href="" id="facebook-share"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" id="twitter-share"><i class="fab fa-twitter-square"></i></a>
+                    <a href="" id="mail-share"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </section>
+      
+        <!-- <====== PRODUCT DETAILS ======> -->
+        <section class="product__details">
+          <div class="details__header">
+            <div>
+              <hr />
+              <div class="details__header_titles">
+                <a href="#" class="small-red-font" id="description-tab-btn">Description</a>
+                <a href="#" class="small-red-font" id="details-tab-btn">Details</a>
+                <a href="#" class="small-red-font" id="reviews-tab-btn">Reviews(3)</a>
+              </div>
+              <div class="details__section">
+                <div class="details__description">
+                  <p>Here you can put some information about your product.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae ratione, rem, voluptatem nostrum cupiditate magnam esse aperiam adipisci ab dignissimos qui in beatae vitae at necessitatibus voluptatibus. Doloribus, quasi!
+                  </p>
+                </div>
+                <div class="details__details">
+                  <p>det
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque impedit, eaque expedita cum non saepe? Mollitia quasi
+                    placeat adipisci, necessitatibus architecto eveniet nulla
+                    deserunt id, ipsum quisquam in, dicta unde.
+                  </p>
+                </div>
+                <!--------- reviews column --------->
+                <div class="details__reviews">
+                  <div class="col__rating">
+                    <div class="row__stars">
+                      <span>4.5</span>
+                      <div class="row__stars__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        
+                      </div>
+                    </div>
+                    <div class="row__full_stars_view">
+                      <div class="row__full__five">
+                        <span>some</span>
+                        <progress max="10" value="5"></progress>
+                      </div>
+                      <div class="row__full__four">
+                        <span>some</span>
+                        <progress max="10" value="5"></progress>
+                      </div>
+                      <div class="row__full__three">
+                        <span>some</span>
+                        <progress max="10" value="5"></progress>
+                      </div>
+                      <div class="row__full__two">
+                        <span>some</span>
+                        <progress max="10" value="5"></progress>
+                      </div>
+                      <div class="row__full__one">
+                        <span>some</span>
+                        <progress max="10" value="5"></progress>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col__reviews">
+                    <div class="reviews__Review">
+                      <div class="review__head">
+                        <p class="reviewer__name">John</p>
+                        <span>15 jun 2020 , 08:00AM</span>
+                        <div class="reviewer__stars row__stars__stars">
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                        </div>
+                      </div>
+                      <div class="reviewer__opinion">
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                          Molestiae doloremque neque tempora repellat, temporibus
+                          reprehenderit sequi deserunt nam odio amet quia facere
+                          consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                        </p>
+                      </div>
+                    </div>
+                    <div class="reviews__Review">
+                      <div class="review__head">
+                        <p class="reviewer__name">John</p>
+                        <span>15 jun 2020 , 08:00AM</span>
+                        <div class="reviewer__stars row__stars__stars">
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                        </div>
+                      </div>
+                      <div class="reviewer__opinion">
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                          Molestiae doloremque neque tempora repellat, temporibus
+                          reprehenderit sequi deserunt nam odio amet quia facere
+                          consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                        </p>
+                      </div>
+                    </div>
+                    <div class="reviews__Review">
+                      <div class="review__head">
+                        <p class="reviewer__name">John</p>
+                        <span>15 jun 2020 , 08:00AM</span>
+                        <div class="reviewer__stars row__stars__stars">
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                          <span>some</span>
+                        </div>
+                      </div>
+                      <div class="reviewer__opinion">
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                          Molestiae doloremque neque tempora repellat, temporibus
+                          reprehenderit sequi deserunt nam odio amet quia facere
+                          consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <form class="col__submit_rating">
+                    <input placeholder="test">
+                    <input placeholder="test">
+                    <input placeholder="test">
+                    
+                    <label>Your Rating</label>
+                    <input>
+                    <input type="submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div style="font-weight: bold">
+              <br />HERE I WILL PUT SOME SORT OF THINGS BUT NOT NOW ...
+            </div>
+          </div>
+        </section>
+      </main>
+      <setion class="product related__products">
+        <h3 style="text-align: center">RELATED PRODUCTS</h3>
+        <div class="related__products__container">
+          <div class="related__item">
+            <img src="res/img/product09.png" alt="" />
+            <p>gedededed</p>
+            <p>gedededed</p>
+            <p>gedededed</p>
+          </div>
+          <div class="related__item">
+            <img src="res/img/product09.png" alt="" />
+            <p>gedededed</p>
+            <p>gedededed</p>
+            <p>gedededed</p>
+          </div>
+          <div class="related__item">
+            <img src="res/img/product09.png" alt="" />
+            <p>gedededed</p>
+            <p>gedededed</p>
+            <p>gedededed</p>
+          </div>
+          <div class="related__item">
+            <img src="res/img/product09.png" alt="" />
+            <p>gedededed</p>
+            <p>gedededed</p>
+            <p>gedededed</p>
+          </div>
+        </div>
+      </setion>
+
+    </div>
+
+
+    <footer>
+      <nav>""</nav>
+    </footer>
   </body>
 </html>
