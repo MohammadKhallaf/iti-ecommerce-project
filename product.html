@@ -17,22 +17,32 @@
     </header>
     <!-- single product details -->
     <div class="page__content">
-
       <main class="product">
         <!-- PRODUCT SUMMARY -->
         <section class="product__summary">
           <div class="summary__container">
-            <div class="summary__img">
-              <img src="res/img/product01.png" alt="" class="large__img" />
-              <i class="fas fa-angle-right arrow_right"></i>
-              <i class="fas fa-angle-left arrow_left"></i>
+            <div class="summary__img" id="summary-img-container">
+              <div class="large_image_container">
+                <img
+                  src="res/img/product01.png"
+                  alt=""
+                  class="large__img"
+                  id="main-img-view"
+                />
+                <div class="summary__arrow_right">
+                  <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="summary__arrow_left">
+                  <i class="fas fa-angle-left"></i>
+                </div>
+              </div>
               <div class="small__img__container">
                 <img src="res/img/product03.png" alt="" class="small__img" />
                 <img src="res/img/product06.png" alt="" class="small__img" />
                 <img src="res/img/product01.png" alt="" class="small__img" />
               </div>
             </div>
-            
+
             <div class="summary__description">
               <h1>PRODUCT NAME</h1>
               <div class="summary__review">
@@ -77,43 +87,58 @@
                   <a href="" id="add-to-compare">
                     <i class="fas fa-th-list"></i>
                     <span>ADD TO COMPARE</span>
-                  </a></div>
-                  <div class="category">
-                    <span>CATEGORY :</span>
-                    <span>LAPTOP</span>
-                    <span>LOREM</span>
-                  </div>
-                  <div class="share__buttons">
-                    <span>SHARE:</span>
-                    <a href="" id="facebook-share"><i class="fab fa-facebook-square"></i></a>
-                    <a href="" id="twitter-share"><i class="fab fa-twitter-square"></i></a>
-                    <a href="" id="mail-share"><i class="fas fa-envelope"></i></a>
-                  </div>
+                  </a>
+                </div>
+                <div class="category">
+                  <span>CATEGORY :</span>
+                  <span>LAPTOP</span>
+                  <span>LOREM</span>
+                </div>
+                <div class="share__buttons">
+                  <span>SHARE:</span>
+                  <a href="" id="facebook-share"
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                  <a href="" id="twitter-share"
+                    ><i class="fab fa-twitter-square"></i
+                  ></a>
+                  <a href="" id="mail-share"><i class="fas fa-envelope"></i></a>
                 </div>
               </div>
             </div>
-          
+          </div>
         </section>
-      
+
         <!-- <====== PRODUCT DETAILS ======> -->
         <section class="product__details">
           <div class="details__header">
             <div>
               <hr />
               <div class="details__header_titles">
-                <a href="#" class="small-red-font" id="description-tab-btn">Description</a>
-                <a href="#" class="small-red-font" id="details-tab-btn">Details</a>
-                <a href="#" class="small-red-font" id="reviews-tab-btn">Reviews(3)</a>
+                <a href="#" class="small-red-font" id="description-tab-btn"
+                  >Description</a
+                >
+                <a href="#" class="small-red-font" id="details-tab-btn"
+                  >Details</a
+                >
+                <a href="#" class="small-red-font" id="reviews-tab-btn"
+                  >Reviews(3)</a
+                >
               </div>
               <div class="details__section">
                 <div class="details__description">
-                  <p>Here you can put some information about your product.<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae ratione, rem, voluptatem nostrum cupiditate magnam esse aperiam adipisci ab dignissimos qui in beatae vitae at necessitatibus voluptatibus. Doloribus, quasi!
+                  <p>
+                    Here you can put some information about your product.<br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis molestiae ratione, rem, voluptatem nostrum
+                    cupiditate magnam esse aperiam adipisci ab dignissimos qui
+                    in beatae vitae at necessitatibus voluptatibus. Doloribus,
+                    quasi!
                   </p>
                 </div>
                 <div class="details__details">
-                  <p>det
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <p>
+                    det Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Itaque impedit, eaque expedita cum non saepe? Mollitia quasi
                     placeat adipisci, necessitatibus architecto eveniet nulla
                     deserunt id, ipsum quisquam in, dicta unde.
@@ -130,7 +155,6 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
-                        
                       </div>
                     </div>
                     <div class="row__full_stars_view">
@@ -156,7 +180,7 @@
                       </div>
                     </div>
                   </div>
-            
+
                   <div class="col__reviews">
                     <div class="reviews__Review">
                       <div class="review__head">
@@ -172,10 +196,11 @@
                       </div>
                       <div class="reviewer__opinion">
                         <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                          Molestiae doloremque neque tempora repellat, temporibus
-                          reprehenderit sequi deserunt nam odio amet quia facere
-                          consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Molestiae doloremque neque tempora repellat,
+                          temporibus reprehenderit sequi deserunt nam odio amet
+                          quia facere consequuntur ex, harum, nihil cum quaerat
+                          nemo nobis?
                         </p>
                       </div>
                     </div>
@@ -193,10 +218,11 @@
                       </div>
                       <div class="reviewer__opinion">
                         <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                          Molestiae doloremque neque tempora repellat, temporibus
-                          reprehenderit sequi deserunt nam odio amet quia facere
-                          consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Molestiae doloremque neque tempora repellat,
+                          temporibus reprehenderit sequi deserunt nam odio amet
+                          quia facere consequuntur ex, harum, nihil cum quaerat
+                          nemo nobis?
                         </p>
                       </div>
                     </div>
@@ -214,23 +240,24 @@
                       </div>
                       <div class="reviewer__opinion">
                         <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                          Molestiae doloremque neque tempora repellat, temporibus
-                          reprehenderit sequi deserunt nam odio amet quia facere
-                          consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Molestiae doloremque neque tempora repellat,
+                          temporibus reprehenderit sequi deserunt nam odio amet
+                          quia facere consequuntur ex, harum, nihil cum quaerat
+                          nemo nobis?
                         </p>
                       </div>
                     </div>
                   </div>
-            
+
                   <form class="col__submit_rating">
-                    <input placeholder="test">
-                    <input placeholder="test">
-                    <input placeholder="test">
-                    
+                    <input placeholder="test" />
+                    <input placeholder="test" />
+                    <input placeholder="test" />
+
                     <label>Your Rating</label>
-                    <input>
-                    <input type="submit">
+                    <input />
+                    <input type="submit" />
                   </form>
                 </div>
               </div>
@@ -270,9 +297,7 @@
           </div>
         </div>
       </setion>
-
     </div>
-
 
     <footer>
       <nav>""</nav>
