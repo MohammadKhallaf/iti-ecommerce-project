@@ -14,28 +14,25 @@
 		<script src="https://kit.fontawesome.com/d0259d1f22.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<!-- HEADER -->
-		<header>
-			<!-- TOP HEADER -->
-			<div id="top-header">
-				<div class="topHeader_container">
-					<ul class="header-links pull-left">
-						<li><a href="tel:+1800229933"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-						<li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i> Electro@gmail.com</a></li>
-						<li><a onclick="goPosition()"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
-					</ul>
-					<ul class="header-links pull-right">
-						<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-					</ul>
-				</div>
+		<!-- TOP HEADER -->
+		<div id="top-header">
+			<div class="topHeader_container">
+				<ul class="header-links pull-left">
+					<li><a href="tel:+0201090963906"><i class="fa fa-phone"></i><b> CALL US</b></a></li>
+					<li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i><b> EMAIL</b></a></li>
+					<li><a onclick="goPosition()"><i class="fa fa-map-marker"></i><b> LOCATION</b></a></li>
+				</ul>
+				<ul class="header-links pull-right">
+					<li><a href="#"><i class="fa fa-user-o"></i><b> SING UP</b></a></li>
+				</ul>
 			</div>
-			<!-- /TOP HEADER -->
+		</div>
+		<!-- /TOP HEADER -->
 
-			<!-- MAIN HEADER -->
+		<!-- HEADER -->
+		<header id="hed-con">
 			<div id="header">
-				<!-- container -->
 				<div class="header_container">
-					<!-- row -->
 					<div class="row_search">
 						<!-- LOGO -->
 						<div class="col-md-3">
@@ -66,68 +63,21 @@
 						<!-- ACCOUNT -->
 						<div class="col-md-3">
 							<div class="header-ctn">
-								<!-- Wishlist -->
-								<div>
-									<a href="#">
-										<i class="fa fa-heart-o"></i>
-										<span>Your Wishlist</span>
-										<div class="qty">2</div>
-									</a>
-								</div>
-								<!-- /Wishlist -->
 
 								<!-- Cart -->
-								<div class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-										<i class="fa fa-shopping-cart"></i>
-										<span>Your Cart</span>
-										<div class="qty">3</div>
+								<div class="cart">
+									<a id="basket" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-basket"></i>
+										<span id="basketNumber">0</span>
 									</a>
-									<div class="cart-dropdown">
-										<div class="cart-list">
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/product01.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">product name goes here</a></h3>
-													<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/product02.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">product name goes here</a></h3>
-													<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-										</div>
-										<div class="cart-summary">
-											<small>3 Item(s) selected</small>
-											<h5>SUBTOTAL: $2940.00</h5>
-										</div>
-										<div class="cart-btns">
-											<a href="#">View Cart</a>
-											<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
-										</div>
-									</div>
 								</div>
 								<!-- /Cart -->
-
 							</div>
 						</div>
 						<!-- /ACCOUNT -->
 					</div>
-					<!-- row -->
 				</div>
-				<!-- container -->
 			</div>
-			<!-- /MAIN HEADER -->
 		</header>
 		<!-- /HEADER -->
 
@@ -193,11 +143,9 @@
 
 		<!-- Categories -->
 		<div class="Categories_section">
-			<!-- container -->
 			<div class="Categories_container">
-				<!-- row -->
 				<div class="Categories_row">
-					<!-- shop -->
+					<!-- shop1 -->
 					<div class="col-md-4">
 						<div class="shop">
 							<div class="shop-img">
@@ -211,7 +159,7 @@
 					</div>
 					<!-- /shop -->
 
-					<!-- shop -->
+					<!-- shop2 -->
 					<div class="col-md-4">
 						<div class="shop">
 							<div class="shop-img">
@@ -225,7 +173,7 @@
 					</div>
 					<!-- /shop -->
 
-					<!-- shop -->
+					<!-- shop3 -->
 					<div class="col-md-4">
 						<div class="shop">
 							<div class="shop-img">
@@ -238,7 +186,8 @@
 						</div>
 					</div>
 					<!-- /shop -->
-					<!-- shop -->
+
+					<!-- shop4 -->
 					<div class="col-md-4">
 						<div class="shop">
 							<div class="shop-img">
@@ -252,7 +201,7 @@
 					</div>
 					<!-- /shop -->
 
-					<!-- shop -->
+					<!-- shop5 -->
 					<div class="col-md-4">
 						<div class="shop">
 							<div class="shop-img">
@@ -266,7 +215,7 @@
 					</div>
 					<!-- /shop -->
 
-					<!-- shop -->
+					<!-- shop6 -->
 					<div class="col-md-4">
 						<div class="shop">
 							<div class="shop-img">
@@ -279,25 +228,19 @@
 						</div>
 					</div>
 					<!-- /shop -->
-					
 				</div>
-				<!-- /row -->
 			</div>
-			<!-- /container -->
 		</div>
 		<!-- /Categories-->
 
-		<!-- store -->
+		<!-- store1 -->
 		<div class="store_section">
-			<!-- container -->
 			<div class="store_container">
-				<!-- row -->
 				<div class="store_row">
-
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">New Products</h3>
+							<h3 class="title">Hot seal</h3>
 							<div class="section-nav">
 								<ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
@@ -310,7 +253,7 @@
 					</div>
 					<!-- /section title -->
 
-					<!-- Products tab & slick -->
+					<!-- Products1 -->
 					<div class="col-md-12">
 						<div class="stoe_row">
 							<div class="products-tabs">
@@ -339,8 +282,8 @@
 												</div>
 											</div>
 											<div class="product-btns">
-												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></button>
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i></button>
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
 											</div>
 										</div>
 										<!-- /product -->
@@ -366,8 +309,8 @@
 												</div>
 											</div>
 											<div class="product-btns">
-												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></button>
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i></button>
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
 											</div>
 										  </div>
 										<!-- /product -->
@@ -390,8 +333,8 @@
 												</div>
 											</div>
 											<div class="product-btns">
-												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></button>
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i></button>
+												<div data-title="Quick View"  class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
 											</div>
 										  </div>
 										<!-- /product -->
@@ -414,8 +357,8 @@
 												</div>
 											</div>
 											<div class="product-btns">
-												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></button>
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i></button>
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
 											</div>
 										</div>
 										<!-- /product -->
@@ -443,8 +386,8 @@
 												
 											</div>
 											<div class="product-btns">
-												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></button>
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i></button>
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
 											</div>
 										</div>
 										<!-- /product -->
@@ -471,8 +414,8 @@
 												
 											</div>
 											<div class="product-btns">
-												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></button>
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i></button>
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
 											</div>
 										</div>
 										<!-- /product -->
@@ -496,8 +439,8 @@
 												
 											</div>
 											<div class="product-btns">
-												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></button>
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i></button>
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
 										    </div>
 										  </div>
 										  
@@ -522,8 +465,8 @@
 												
 											</div>
 											<div class="product-btns">
-												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></button>
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i></button>
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
 											</div>
 										</div>
 										<!-- /product -->
@@ -534,11 +477,8 @@
 							</div>
 						</div>
 					</div>
-					<!-- Products tab & slick -->
 				</div>
-				<!-- /row -->
 			</div>
-			<!-- /container -->
 		</div>
 		<!-- /store -->
 
@@ -546,7 +486,6 @@
 		<div id="hot-deal" class="section">
 			<!-- container -->
 			<div class="hot-deal_container">
-				<!-- row -->
 				<div class="hot-deal_row">
 					<div class="col-md-12">
 						<div class="hot-deal">
@@ -582,25 +521,263 @@
 						</div>
 					</div>
 				</div>
-				<!-- /row -->
 			</div>
-			<!-- /container -->
 		</div>
 		<!-- /HOT DEAL SECTION -->
 
-		<div>
-			<p>Lorem ipsum dolor,  adipisci impedit assumenda suscipit.</p>
-			<br>
-			<br>
-			<br>
+		<!-- store2 -->
+		<div class="store_section">
+			<div class="store_container">
+				<div class="store_row">
+					<!-- section title -->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">New Products</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									<li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
+									<li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
+									<li><a data-toggle="tab" href="#tab1">Cameras</a></li>
+									<li><a data-toggle="tab" href="#tab1">Accessories</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /section title -->
 
-			
+					<!-- Products2 -->
+					<div class="col-md-12">
+						<div class="stoe_row">
+							<div class="products-tabs">
+								<!-- tab -->
+								<div id="tab1" class="tab-pane active">
+									<div class="products-slick" data-nav="#slick-nav-1">
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./res/img/product01.png" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Category</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="product-btns">
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
+											</div>
+										</div>
+										<!-- /product -->
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./res/img/product01.png" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Category</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<div class="product-btns">
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
+											</div>
+										  </div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./res/img/product09.png" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Category</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+											</div>
+											<div class="product-btns">
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
+											</div>
+										  </div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./res/img/product01.png" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Category</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<div class="product-btns">
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./res/img/product01.png" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Category</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												
+											</div>
+											<div class="product-btns">
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
+											</div>
+										</div>
+										<!-- /product -->
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./res/img/product01.png" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">NEW</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Category</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												
+											</div>
+											<div class="product-btns">
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
+											</div>
+										</div>
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./res/img/product09.png" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Category</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												
+											</div>
+											<div class="product-btns">
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
+										    </div>
+										  </div>
+										  
+										<!-- /product -->
+
+										<!-- product -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./res/img/product01.png" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Category</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												
+											</div>
+											<div class="product-btns">
+												<div data-title="Quick View" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp"></span></div>
+												<div data-title="Add To Cart" class="add-to-cart-btn"><i class="fa fa-shopping-cart" onclick="onLoadCartNumbers()"></i></div>
+											</div>
+										</div>
+										<!-- /product -->
+									</div>
+									<div id="slick-nav-1" class="products-slick-nav"></div>
+								</div>
+								<!-- /tab -->
+							</div>
+						</div>
+					</div>
+					<!-- Products -->
+				</div>
+			</div>
 		</div>
+		<!-- /store -->
+
 		<!-- NEWSLETTER -->
 		<div id="newsletter" class="section">
-			<!-- container -->
 			<div class="newsletter_container">
-				<!-- row -->
 				<div class="newsletter_row">
 					<div class="col-md-12">
 						<div class="newsletter">
@@ -626,28 +803,24 @@
 						</div>
 					</div>
 				</div>
-				<!-- /row -->
 			</div>
-			<!-- /container -->
 		</div>
 		<!-- /NEWSLETTER -->
 
 		<!-- FOOTER -->
 		<footer id="footer">
 			<!-- top footer -->
-			<div class="section">
-				<!-- container -->
+			<div class="footer_section">
 				<div class="footer_container">
-					<!-- row -->
 					<div class="footer_row">
 						<div class="col-md-3">
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
 								<p>Lorem reprehenderit alias natus, deserunt, perspiciatis recusandae velit illum? Impedit laboriosam provident deleniti dolorem ea. </p>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+									<li><a href="tel:+0201090963906"><i class="fa fa-phone"></i> +02-010-906-3906</a></li>
+									<li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i> Electro@gmail.com</a></li>
+									<li><a onclick="goPosition()"><i class="fa fa-map-marker"></i> Gleem Beach, San Stefano</a></li>
 								</ul>
 							</div>
 						</div>
@@ -693,26 +866,21 @@
 							</div>
 						</div>
 					</div>
-					<!-- /row -->
 				</div>
-				<!-- /container -->
 			</div>
 			<!-- /top footer -->
 
 			<!-- bottom footer -->
 			<div id="bottom-footer" class="section">
-				<div class="container">
-					<!-- row -->
-					<div class="row">
+				<div class="bottom-footer-container">
+					<div class="bottom-footer-row">
 						<div class="copyright">
 							<span class="copyright">
 								 <a target="_blank" href="#">copyright Team1</a>
 							</span>
 						</div>
 					</div>
-						<!-- /row -->
 				</div>
-				<!-- /container -->
 			</div>
 			<!-- /bottom footer -->
 		</footer>

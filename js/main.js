@@ -3,8 +3,9 @@
 
 /*________GLOBAL-VARIABLES________*/
 
-/*________GLOBAL-FUNCTIONS________*/
+/*========| GLOBAL-FUNCTIONS |========*/
 
 /*________HELPER-FUNCTIONS________*/
 
 /*________EVENTS________*/
+
