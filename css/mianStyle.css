@@ -791,12 +791,33 @@ color:black;
   height: 50px;
   color: white;
   border-radius: 5px;
+  margin: auto;
+
   background-color: #1E1F29;
 }
 #creatNewAccountLink
 {
  color: red;
 /* background-color: sandybrown;*/
+}
+/*signup*/
+.signupForm_container
+{
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border: #717171 3px solid;
+  font-size: x-large;
+  font-style: normal;
+color:black;
+}
+#signup-form
+{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
 }
 
 /*----------------------------------------*\
