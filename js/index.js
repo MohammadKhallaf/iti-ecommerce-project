@@ -63,12 +63,64 @@ function goPosition() {
 
 //add to cart
 
+let products=[
+  {
+    name:"product name 1",
+    tag:"laptop no 1",
+    price:10 ,
+    inCart:0
+  },
+  {
+    name:"product name 2",
+    tag:"laptop no 2",
+    price:20 ,
+    inCart:0
+  },
+  {
+    name:"product name 3",
+    tag:"laptop no 3",
+    price:30 ,
+    inCart:0
+  },
+  {
+    name:"product name 4",
+    tag:"laptop no 4",
+    price:40 ,
+    inCart:0
+  },
+  {
+    name:"product name 5",
+    tag:"laptop no 5",
+    price:50 ,
+    inCart:0
+  },
+  {
+    name:"product name 6",
+    tag:"laptop no 6",
+    price:60 ,
+    inCart:0
+  },
+  {
+    name:"product name 7",
+    tag:"laptop no 7",
+    price:70 ,
+    inCart:0
+  },
+  {
+    name:"product name 8",
+    tag:"laptop no 8",
+    price:80 ,
+    inCart:0
+  },
+];
+
 let carts=document.querySelectorAll('.fa-shopping-cart')
 
 for (let i=0;i<carts.length; i++)
 {
   carts[i].addEventListener('click',()=>{ 
-    cartNumbers();
+    cartNumbers(products[i]);
+    totalCost(products[i]);
   })
 }
 
@@ -92,7 +144,7 @@ function onLoadCartNumbers()
   
 }
 
-function cartNumbers(){
+function cartNumbers(product){
   var h1 = document.getElementsByTagName("span")[0];   // Get the first <h1> element in the document
   var att = document.createAttribute("id");       // Create a "class" attribute
   att.value = "basketNumber";                           // Set the value of the class attribute
@@ -108,6 +160,37 @@ function cartNumbers(){
     localStorage.setItem('cartNumbers',1);
     document.querySelector('.cart span').textContent=1;
   }
-  // console.log("first")
+  setItems(product);
+}
+
+function setItems(product){
+  let cartItems = localStorage.getItem('productsInCart');
+  cartItems = JSON.parse(cartItems);
+  if(cartItems != null){
+    if(cartItems[product.tag] == undefined){
+      cartItems = {
+        ...cartItems,
+        [product.tag]:product
+      }
+    }
+    cartItems[product.tag].inCart += 1;
+  }else{
+    product.inCart = 1
+    cartItems= {
+      [product.tag]: product
+    }
+  }
+  localStorage.setItem("productsInCart", JSON.stringify(cartItems))
+}
+
+function totalCost(product){
+  let cartCost =localStorage.getItem('totalCost');
+  if(cartCost != null){
+    cartCost = parseInt(cartCost);
+    localStorage.setItem("totalCost", cartCost+ product.price)
+  }else{
+    localStorage.setItem("totalCost", product.price)
+  }
 }
 onLoadCartNumbers1()
+

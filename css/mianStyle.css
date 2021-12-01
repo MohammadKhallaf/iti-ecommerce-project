@@ -31,6 +31,7 @@ body
 /*----------------------------------------*\
   #header
 \*----------------------------------------*/
+
 #hed-con
 {
   width: 100%;
@@ -65,7 +66,6 @@ body
   font-size: 12px;
   position: relative;
   float: left;
- 
 }
 ul
 {
@@ -78,7 +78,6 @@ a
   font-weight: 500;
   display: block;
 }
-
 .pull-left
 {
   color: #ffffff;
@@ -94,7 +93,6 @@ a
 }
 
 /*header*/
-
 
 #header 
 {
@@ -117,8 +115,7 @@ a
 .row_search {
   position: relative;
   margin-right: auto;
-  margin-left: 100px;
-  
+  margin-left: 100px; 
 }
 
 .header-logo {
@@ -996,18 +993,17 @@ i.fa-eye:hover , i.fa-shopping-cart:hover
   border-radius: 50px;
   cursor: pointer;
 } 
-i.fa-eye:hover
+i.fa-eye:hover, i.fa-shopping-cart:hover
 {
   color: #e00202;
 }
-i.fa-shopping-cart:active
+i.fa-shopping-cart:active , i.fa-shopping-cart:active
 {
-  color: #e00202;
+  color: #000000;
 }
 .product-btns div {
   display: inline-block;
   visibility: hidden;
-
 }
 .product:hover .product-btns div {
   visibility: visible;
@@ -1063,6 +1059,9 @@ i.fa-shopping-cart:active
   font-size: 12px ;
   color: #FFF;
   background-color: #D10024;
+}
+.product:hover{
+  border: 3px solid #D10024;
 }
 
  
