@@ -1,5 +1,4 @@
-
-
+/*------global--------*/
 *
 {
   box-sizing: border-box;
@@ -27,10 +26,85 @@ body
   display: block;
   overflow-x:hidden
 }
+/*---------element-----------*/
+li {
+  list-style: none;
+  text-align: -webkit-match-parent;
+}
+ul
+{
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff !important;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+form 
+{
+  display: block;
+  float: left;
+  margin-top: 0em;
+}
+button
+{
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+div {
+  display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(43, 45, 66);
+  font-weight: 700;
+  margin: 0px 0px 10px;
+}
+p {
+  display: inline-block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
-/*----------------------------------------*\
-  #header
-\*----------------------------------------*/
+/*--------------size------------*/
+.fullSize
+{
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  display: block;
+  float: left;
+}
+.thirdSize {
+  display: block;
+  width: 33.33333333%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.halfSize {
+  width: 50%;
+  float: left;
+  position: relative; 
+}
+.quarterSize {
+  position: relative;
+  width: 25%;
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*-----------------header-----------------------*/
 
 #hed-con
 {
@@ -67,17 +141,7 @@ body
   position: relative;
   float: left;
 }
-ul
-{
-  list-style-type: none;
-}
-a
-{
-  text-decoration: none;
-  color: #ffffff !important;
-  font-weight: 500;
-  display: block;
-}
+
 .pull-left
 {
   color: #ffffff;
@@ -92,7 +156,7 @@ a
   float:right !important;
 }
 
-/*header*/
+/*--------mainHeader------------*/
 
 #header 
 {
@@ -111,27 +175,15 @@ a
   margin-right: auto;
   margin-left: auto;
 }
-
 .row_search {
   position: relative;
   margin-right: auto;
   margin-left: 100px; 
 }
-
 .header-logo {
   display: block;
   float: left;
   margin: auto;
-}
-div {
-  display: block;
-}
-a {
-  text-decoration: none;
-  color: #ffffff !important;
-  font-weight: 500;
-  display: block;
-  cursor: pointer;
 }
 .header-search {
   padding: 15px 0px;
@@ -139,7 +191,6 @@ a {
 .header-search form {
   position: relative;
 }
-
 .header-search form .input-select 
 {
   margin-right: -4px;
@@ -178,13 +229,6 @@ a {
   appearance: auto;
   cursor: text;
 }
-form 
-{
-  display: block;
-  float: left;
-  margin-top: 0em;
-}
-
 .header-search form .search-btn 
 {
   height: 40px;
@@ -198,18 +242,10 @@ form
   border-image: initial;
   border-radius: 0px 40px 40px 0px;
 }
-
-button
-{
-  -webkit-appearance: button;
-  cursor: pointer;
-}
 .header-links a:hover
 {
-  
    color: #D10024 !important;
 }
-
 .header-ctn {
   display: block;
   float:right ;
@@ -217,15 +253,10 @@ button
 .fa-shopping-basket
 {
   font-size: 30px !important;
-  margin-top: -15px; 
+  margin-top: 15px; 
 }
-
 .product-widget .product-img > img {
   width: 100%;
-}
-img {
-  vertical-align: middle;
-  border: 0;
 }
 .product-widget .product-body {
   padding-left: 75px;
@@ -235,24 +266,27 @@ img {
   text-transform: uppercase;
   font-size: 12px;
 }
-h1, h2, h3, h4, h5, h6 {
-  color: rgb(43, 45, 66);
-  font-weight: 700;
-  margin: 0px 0px 10px;
+#basketNumber {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px ;
+  color: #FFF;
+  background-color: #D10024;
 }
 
-
-
-/*----------------------------------------*\
-  #footer
-\*----------------------------------------*/
+/*------------------footer----------------------*/
 
 #footer {
   background: #15161D;
   color: #B9BABC;
   margin-bottom: 0px !important;
 }
-
 .footer_container
 { 
   width: 1170px;
@@ -260,22 +294,20 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 15px;
   margin-left: auto !important;
   margin-right: auto !important;
-  
   display: block;
-  height: 350px;
-  text-align: center;
+  height: 320px;
 }
-.footer_section{
-  text-align: center;
-  
-}
-
 .footer_row {
   width: 1170px;
-  height: 300px;
-  margin-left:50px !important;
   text-align: left;
-  
+}
+.footer_row div h3{
+  margin: auto;
+  text-align: left;
+  margin-left: 36px !important;
+}
+.footer_row div div ul{
+  text-align: left;
 }
 .footer .footer-title {
   color: #FFF;
@@ -284,42 +316,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 30px;
 }
 
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-li {
-  list-style: none;
-  text-align: -webkit-match-parent;
-}
 ul li a:hover
 {
   color:crimson !important;
 }
-.col-md-3 {
-  position: relative;
-  width: 25%;
-  float: left;
-}
-.col-xs-6 {
-  width: 50%;
-  float: left;
-  position: relative;
-  
-}
 
-p {
-  display: inline-block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
 /*-------button footer--------*/
 #bottom-footer
 {
@@ -330,10 +331,7 @@ p {
   opacity: 0.7;
 }
 
-
-/*----------------------------------------*\
-  #navigator
-\*----------------------------------------*/
+/*--------------navigator--------------------------*/
 
 #navigation
 {
@@ -359,17 +357,9 @@ p {
   text-decoration: none;
   color:#D10024 !important;
 }
-/*----------------------------------------*\
-  #HotDeals
-\*----------------------------------------*/
-.col-md-12
-{
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  display: block;
-  float: left;
-}
+
+/*-----------------HotDeals-----------------------*/
+
 #hot-deal
 {
   position:relative;
@@ -459,9 +449,7 @@ p {
   transition: 0.2s all;
 }
 
-/*----------------------------------------*\
-  #newsletter
-\*----------------------------------------*/
+/*------------------newsletter----------------------*/
 
 #newsletter
 {
@@ -540,11 +528,9 @@ p {
   font-size: 160px;
   color: #E4E7ED;
   top: 15px;
-  -webkit-transform: translateY(-50%) rotate(
-15deg);
+  -webkit-transform: translateY(-50%) rotate(15deg);
   -ms-transform: translateY(-50%) rotate(15deg);
-  transform: translateY(-50%) rotate(
-15deg);
+  transform: translateY(-50%) rotate(15deg);
   z-index: -1;
   left: -90px;
 }
@@ -586,10 +572,7 @@ ul.newsletter-follow
   float: left;
 }
 
-
-/*----------------------------------------*\
-  #Categories
-\*----------------------------------------*/
+/*-----------------Categories-----------------------*/
 
 .Categories_section
 {
@@ -621,15 +604,6 @@ ul.newsletter-follow
 .row:before {
   display: table;
   content: " ";
-}
-.col-md-4 {
-  display: block;
-  width: 33.33333333%;
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .shop {
   position: relative;
@@ -704,13 +678,7 @@ ul.newsletter-follow
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*--ads--*/
-.adver_container>img
-{
-  width: 100%;
-}
-
-/*--slider--*/
+/*---------------slider-----------*/
 
 /* Slideshow container */
 .mySlides
@@ -726,63 +694,36 @@ ul.newsletter-follow
   background-color: rgb(255, 255, 255);
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 /* Caption text */
 .text {
-  color: #000000;
+  color: #ffffff;
+  background-color: #D10024;
+  font-size: 18px !important;
+  width:200px !important;
+  text-align: center !important;
+  border-radius: 6px;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
-  text-align: center;
+  margin-left: 40%;
+  cursor: pointer;
+  animation: none !important;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: #f70000;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  background-color: #000000;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  visibility: hidden;
 }
 
 .active, .dot:hover {
@@ -794,20 +735,20 @@ ul.newsletter-follow
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 8s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0.7} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0.7} 
   to {opacity: 1}
 }
 
-/*---store----*/
+/*--------store----------*/
 
 .store_section
 {
@@ -919,13 +860,6 @@ ul.newsletter-follow
   padding: 2px 10px;
   font-size: 12px;
 }
-/* .product .product-body {
-  position: relative;
-  padding: 15px;
-  background-color: #FFF;
-  text-align: center;
-  z-index: 20;
-} */
 .product .product-body .product-category {
   text-transform: uppercase;
   font-size: 12px;
@@ -955,23 +889,6 @@ ul.newsletter-follow
 .product .product-body .product-rating>i.fa-star {
   color: #ef233c;
 }
-/* .product .product-body .product-btns>button {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  background: transparent;
-  border: none;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.product-btns{
-  width: 200px;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-} */
-
 .product-name a
 {
   color: #222222 !important;
@@ -1047,19 +964,7 @@ i.fa-shopping-cart:active , i.fa-shopping-cart:active
   position: relative;
 }
 
-#basketNumber {
-  position: absolute;
-  right: -16px;
-  top: -15px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 50%;
-  font-size: 12px ;
-  color: #FFF;
-  background-color: #D10024;
-}
+/*------test---------*/
 .product:hover{
   border: 3px solid #D10024;
 }
