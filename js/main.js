@@ -60,13 +60,13 @@ function goPosition() {
     },
   ];
   
-  let carts=document.querySelectorAll('.fa-shopping-cart')
+  let carts=document.querySelectorAll('.add-to-cart-btn')
   
   for (let i=0;i<carts.length; i++)
   {
     carts[i].addEventListener('click',()=>{ 
       cartNumbers(products[i]);
-      totalCost(products[i]);
+      totalCosts(products[i]);
     })
   }
   
@@ -87,7 +87,6 @@ function goPosition() {
   {
       document.getElementById('basket').appendChild(document.createElement("SPAN"));
       document.querySelector('.cart span').textContent= productNumbers;
-    
   }
   
   function cartNumbers(product){
@@ -129,7 +128,7 @@ function goPosition() {
     localStorage.setItem("productsInCart", JSON.stringify(cartItems))
   }
   
-  function totalCost(product){
+  function totalCosts(product){
     let cartCost =localStorage.getItem('totalCost');
     if(cartCost != null){
       cartCost = parseInt(cartCost);
@@ -138,8 +137,26 @@ function goPosition() {
       localStorage.setItem("totalCost", product.price)
     }
   }
-  
-  onLoadCartNumbers1()
-  
-  
+onLoadCartNumbers1()
 
+
+function myFunction() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+      }
+  }
+}
+
+function show(){
+  document.getElementById("myUL").style.visibility = "visible;";
+}
