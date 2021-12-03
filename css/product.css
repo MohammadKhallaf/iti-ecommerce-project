@@ -59,7 +59,6 @@
   top: 45%;
 
   cursor: pointer;
-  
 }
 
 .summary__arrow_right:hover,
@@ -67,8 +66,7 @@
   background-color: var(--primary-color);
   color: var(--accent-primary-color);
 
-transition: all 0.3s ease-in-out;
-
+  transition: all 0.3s ease-in-out;
 }
 
 .summary__arrow_right {
@@ -293,7 +291,7 @@ transition: all 0.3s ease-in-out;
   transition: all 0.5s;
   /* background-color: #eee; */
 }
-.details__reviews>*{
+.details__reviews > * {
   /* background-color: #ddd; */
 }
 
@@ -318,7 +316,7 @@ transition: all 0.3s ease-in-out;
 .col__rating {
   flex-grow: 1;
 }
-.col__reviews{
+.col__reviews {
   flex-grow: 2;
 }
 
@@ -337,7 +335,7 @@ transition: all 0.3s ease-in-out;
   flex-flow: row nowrap;
 }
 
-.row__stars__stars > *+* {
+.row__stars__stars > * + * {
   padding-left: 0.3rem;
 }
 /*<---------------------------------->*/
@@ -350,7 +348,7 @@ transition: all 0.3s ease-in-out;
   row-gap: 1.2rem;
 }
 
-.row__meter{
+.row__meter {
   counter-increment: reviewCounter;
   display: flex;
   align-items: center;
@@ -358,28 +356,26 @@ transition: all 0.3s ease-in-out;
   width: 95%;
   height: 0.5rem;
   border-radius: 2rem;
-  
 }
-.row__meter::before{
-  content:counter(reviewCounter);
+.row__meter::before {
+  content: counter(reviewCounter);
   width: 1rem;
   background: white;
   font-size: 1rem;
   font-weight: 500;
 }
-.row__meter__value{
+.row__meter__value {
   background: var(--primary-color);
   width: 60%;
   height: 0.5rem;
   border-radius: 2rem;
-
 }
 /*<-------------------------------->*/
 /*<--- reviewer --->*/
 .reviews__Review {
   display: flex;
   flex-flow: row wrap;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -402,39 +398,39 @@ transition: all 0.3s ease-in-out;
 
 /*<-------------------------------->*/
 
-.col__submit_review{
+.col__submit_review {
   display: flex;
   flex-flow: column nowrap;
   row-gap: 1rem;
   flex-shrink: 1;
-flex-grow: 1;
+  flex-grow: 1;
   max-width: 90%;
   justify-content: center;
   align-items: center;
 }
 .col__submit_review input {
-
   /* width: 300px; */
   height: 2rem;
   margin-bottom: 1rem;
 }
-.col__submit_review input, .col__submit_review textarea {
+.col__submit_review input,
+.col__submit_review textarea {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   overflow: hidden;
 }
-.col__submit_review .btn{
-  width:5rem;
+.col__submit_review .btn {
+  width: 5rem;
 }
 
-input::placeholder ,textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
   overflow: hidden;
   font-weight: 300;
   font-family: Montserrat, sans-serif;
   font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.25);
 }
-
 
 /* <==========| RELATED PRODUCTS |==========>*/
 .related__container {
@@ -490,12 +486,10 @@ input::placeholder ,textarea::placeholder{
 .related__container:hover .related__arrow_right {
   opacity: 100%;
   right: 1rem;
- 
 }
 .related__container:hover .related__arrow_left {
   opacity: 100%;
   left: 1rem;
-
 }
 
 .related__container__scroll {
@@ -521,18 +515,19 @@ input::placeholder ,textarea::placeholder{
 
 .related__item__container {
   /* border: 1px solid blue; */
- max-width: 50%;
+  max-width: 100%;
   cursor: pointer;
   padding-bottom: 1rem;
-  /* border: 1px solid rgba(0, 0, 0, 0.01); */
+  border: 1px solid rgba(0, 0, 0, 0.01);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .related__item {
   /* border: 1px solid red; */
+
   padding-bottom: 1rem;
-  /* border: 1px solid rgba(0, 0, 0, 0.01); */
+  border: 1px solid rgba(0, 0, 0, 0.01);
   transition: all 0.5s;
   display: flex;
   flex-direction: column;
@@ -545,7 +540,7 @@ input::placeholder ,textarea::placeholder{
   max-width: 100%;
 }
 .related__item__container:hover .related__item__drop {
-top:0;
+  top: 0;
 }
 .related__item__drop {
   margin-top: 0;
@@ -556,17 +551,15 @@ top:0;
   justify-content: center;
   align-items: center;
   background-color: black;
-position: relative;
-top:-5rem;
-z-index: 1;
-transition: top 0.3s ease;
-
+  position: relative;
+  top: -6rem;
+  z-index: 1;
+  transition: top 0.3s ease;
 }
 .related__item__drop div {
   color: aliceblue;
 }
-.related__item__drop .btn{
-  
+.related__item__drop .btn {
   padding: 0.5rem;
   border-radius: 3rem;
 }
