@@ -411,7 +411,7 @@ ul li a:hover
 }
 
 .hot-deal_container:hover .hot-deal .cta-btn {
-  margin-top: 24px;
+  margin-top: 1px;
   background-color: #000000;
 }
 
@@ -487,6 +487,15 @@ ul li a:hover
   text-align: center;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+}
+
+.hot-deal_container:hover .hot-deal>h2{
+  background-color: #D10024;
+  color: #ffffff;
+  font-size: 38px;
+  width: 580px;
+  margin-left: 27%;
+  border-radius: 15px;
 }
 
 /*------------------newsletter----------------------*/
@@ -622,10 +631,21 @@ ul.newsletter-follow
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
+.section-title .title
+{
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  
+  margin: 20px 20px;
+  padding: 15px 25px;
+  color: rgb(255, 255, 255);
+  border-bottom-right-radius: 50px;
+}
 .Categories_container
 {
   width: 1170px;
-  height: 500px;
+  height: 600px;
   display: block;
   margin: auto;
 }
@@ -795,7 +815,7 @@ ul.newsletter-follow
 
 .store_section
 {
-  height: 1050px;
+  height: 1150px;
   background-color: rgb(255, 255, 255);
   position:relative;
   width: 100%;
@@ -936,8 +956,6 @@ ul.newsletter-follow
   color: #222222 !important;
 }
 .product-btns div
-
-
 {
   margin: 10px;
   padding: 10px;
