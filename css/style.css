@@ -87,20 +87,24 @@ a:hover:not(.btn){
 /*<===< home >======>*/
 
 /*---login---*/
+
+/*   sign In         */
+
 #login{
   column-count: 2;
-  column-gap: 10px;
-  column-rule: red;
-column-rule-color: red 3px;
+  column-gap: 100px;
+column-rule-style: solid;
+column-rule-width: 2px;
+grid-column-start: auto;
+
 }
-/*   sign In         */
 #signin-form
 {
   width: 100%;
 }
 .login.container
 {
-  display: block;
+  display: flex;
   position: relative;
   width: 1170px;
   height: 1000px;
@@ -113,11 +117,10 @@ column-rule-color: red 3px;
 }
 .signinForm_container
 {
-  width:50%;
+  width: 380px;
   margin: auto;
   height: 200px;
   padding: 10px;
-  text-align: center;
   border-style: solid;
   border-radius: 15px;
   border: #717171 3px solid;
@@ -134,14 +137,31 @@ column-rule-color: red 3px;
 #username{
 font-size: x-large;
 font-style: normal;
-color:black;}
+color:black;
+text-align: center;
+}
+#username{
+  font-size: x-large;
+  font-style: normal;
+  color:black;
+  text-align: center;
+  }
+  .signupForm_container label{
+    font-size: x-large;
+  font-style: normal;
+  color:black;
+  text-align: center;
+  }
+  
 #password{
+  text-align: center;
   font-size: x-large;
   font-style: normal;
   color:black;}
   #rememberme
   {
-    text-align: left;
+    text-align: justify;
+    margin-left: 100px;
   }
 #yourNameInput
 {
@@ -159,6 +179,62 @@ color:black;}
   border-radius: 5px;
   box-sizing: border-box;
 }
+#psw
+{
+  border: solid silver 2px;
+  padding: 8px;
+  margin: auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#show1
+{
+font-size: 12px;
+margin-left: 130px
+;
+}
+.show
+{
+font-size: 8px;
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+#message p {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: #100041 ;
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: #100061;
+}
+
 #signInButton
 {
   width: 100%;
@@ -171,30 +247,47 @@ color:black;}
 #rememberme
 {
   font-size: smaller;
+  text-align: left;
 }
 /*signup*/
 .signupForm_container
 {
   display: inline-block;
   width: 350px;
-  height: 480px;
+  height: 510px;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-left: 70px;
   border-style: solid;
   border-radius: 15px;
   border: #717171 3px solid;
-  font-size: x-large;
   font-style: normal;
  color:black;
 }
-/* #signup-form
+#signinHead
+{
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#signupHead
+{
+  font-size: 40px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-right: 1000px;
+}
+#signup-form
 {
  /* margin-top: 200px;*/
   margin: auto;
  width: 100%;
+ align-items: center;
   padding: 10px;
-  height: 100%;
-} */
+} 
 #re-passwordInput
 {border: solid silver 2px;
 padding: 8px;
@@ -216,12 +309,15 @@ box-sizing: border-box;
 }
 #signupsubmit
 {
-  width: 100%;
+  width: 300px;
   height: 50px;
   color: white;
   border-radius: 5px;
   margin: auto;
   background-color: #1E1F29;
+}
+#matching{
+  font-size: 12px;
 }
 
 /*---checkout---*/
