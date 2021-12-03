@@ -142,6 +142,8 @@ p {
   float: left;
 }
 
+
+
 .pull-left
 {
   color: #ffffff;
@@ -175,15 +177,36 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-.row_search {
-  position: relative;
-  margin-right: auto;
-  margin-left: 100px; 
+.logo img
+{
+  width: 48px;
+  padding: 0px;
+  margin-top: -40px;
+  margin-right: 20px;
+
+}
+
+.title-logo{
+  color: #bbb !important;
+  display: inline-block !important;
+  font-weight: 900;
+  font-size: 50px;
+}
+.logo{
+  display: inline-block;
+}
+.halfSize .header-search form{
+  width: 100%;
+  margin: auto;
+}
+.header-ctn{
+  margin-right: 100px;
+  margin-top: 10px;
 }
 .header-logo {
   display: block;
-  float: left;
   margin: auto;
+  text-align: center !important;
 }
 .header-search {
   padding: 15px 0px;
@@ -268,8 +291,8 @@ p {
 }
 #basketNumber {
   position: absolute;
-  right: 0px;
-  top: 8px;
+  right: 102px;
+  top: 16px;
   width: 20px;
   height: 20px;
   line-height: 20px;
@@ -372,9 +395,26 @@ ul li a:hover
 {
   
   position: relative;
-  height: 330px;
+  height: 350px;
   text-align: center;
+  padding-bottom: 20px;
 }
+.hot-deal_row{
+  height: 350px;
+}
+.hot-deal_container:hover
+{
+  border: 3px solid #D10024;
+  border-radius: 10px;
+  margin: 16px 10px;
+  padding: -10px;
+}
+
+.hot-deal_container:hover .hot-deal .cta-btn {
+  margin-top: 24px;
+  background-color: #000000;
+}
+
 #hot-deal.section {
   display: block;
   margin-top: 50px !important;
@@ -383,8 +423,8 @@ ul li a:hover
   background-color: #E4E7ED;
   background-image: url(../res/img/hotdeal.png);
   background-position: center;
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
 }
 .hot-deal {
@@ -424,6 +464,7 @@ ul li a:hover
 .text-uppercase 
 {
   text-transform: uppercase;
+  margin-top: 50px;
 }
 .hot-deal p {
   text-transform: uppercase;
@@ -431,12 +472,11 @@ ul li a:hover
   display: block;
 }
 .hot-deal .cta-btn {
-  margin-top: 15px;
+  margin-top: -10px;
 }
 .primary-btn {
   display: inline-block;
   width: 200px;
-  text-align: center;
   padding: 12px 30px;
   background-color: #D10024;
   border: none;
@@ -576,42 +616,33 @@ ul.newsletter-follow
 
 .Categories_section
 {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+  font-weight: 400;
 }
 .Categories_container
 {
   width: 1170px;
-  height: 600px;
+  height: 500px;
   display: block;
   margin: auto;
 }
-
-.container:before
-{
-  display: table;
-  content: " ";
-}
-
-.Categories_row
-{
-  margin-right: -15px;
-  margin-left: -15px;
-  display: block;
-}
-.row:before {
-  display: table;
-  content: " ";
-}
 .shop {
-  position: relative;
+  width: 90%;
+  position:relative;
   overflow: hidden;
-  margin: 15px 0px;
-  display: block;
+  margin: 15px 15px;
   font-size: 14px;
-  line-height: 1.42857143;
+
+}
+
+.shop:hover {
+  width:100%;
+  padding: 0px;
+  margin: 2px;
+  border: 3px solid rgb(0, 0, 0); 
 }
 .shop:before {
   content: "";
@@ -632,7 +663,7 @@ ul.newsletter-follow
   top: 0;
   bottom: 0;
   left: 1px;
-  width: 100%;
+  width: 90%;
   background: #D10024;
   opacity: 0.9;
   -webkit-transform: skewX(-45deg) translateX(-100%);
@@ -676,6 +707,15 @@ ul.newsletter-follow
   font-size: inherit;
   text-rendering: auto;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.shop:hover .cta-btn
+{
+   background-color: black ;
+   width: 120px;
+   text-align: center;
+   height: 20px;
+   border-radius: 10px;
 }
 
 /*---------------slider-----------*/
@@ -964,12 +1004,61 @@ i.fa-shopping-cart:active , i.fa-shopping-cart:active
   position: relative;
 }
 
-/*------test---------*/
 .product:hover{
   border: 3px solid #D10024;
 }
+/*------checkout--------*/
 
+.products-container{
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.product-header
+{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 4px solid lightgrey;
+}
+.product-title
+{
+  width: 40%;
+}
+.price
+{
+  width: 15%;
+  border-bottom:4px solid lightgrey;
+  display: flex;
+  align-items: center;
+}
+.quantity
+{
+  width: 30%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+}
+.total
+{
+  width: 15%;
+  border-bottom:4px solid lightgrey;
+  display: flex;
+  align-items: center;
+}
  
+.productAdd
+{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
 
 
 

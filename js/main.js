@@ -12,49 +12,49 @@ function goPosition() {
   let products=[
     {
       name:"product name 1",
-      tag:"laptop no 1",
+      tag:"product01",
       price:10 ,
       inCart:0
     },
     {
       name:"product name 2",
-      tag:"laptop no 2",
+      tag:"product02",
       price:20 ,
       inCart:0
     },
     {
       name:"product name 3",
-      tag:"laptop no 3",
+      tag:"product03",
       price:30 ,
       inCart:0
     },
     {
       name:"product name 4",
-      tag:"laptop no 4",
+      tag:"product04",
       price:40 ,
       inCart:0
     },
     {
       name:"product name 5",
-      tag:"laptop no 5",
+      tag:"product05",
       price:50 ,
       inCart:0
     },
     {
       name:"product name 6",
-      tag:"laptop no 6",
+      tag:"product06",
       price:60 ,
       inCart:0
     },
     {
       name:"product name 7",
-      tag:"laptop no 7",
+      tag:"product07",
       price:70 ,
       inCart:0
     },
     {
       name:"product name 8",
-      tag:"laptop no 8",
+      tag:"product08",
       price:80 ,
       inCart:0
     },
@@ -138,6 +138,7 @@ function goPosition() {
       localStorage.setItem("totalCost", product.price)
     }
   }
+  
   onLoadCartNumbers1()
   
   
