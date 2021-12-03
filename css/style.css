@@ -10,6 +10,7 @@
   --primary-color: maroon;
   --accent-primary-color: white;
   --secondry-color: darkgray;
+  
 }
 
 body {
@@ -18,6 +19,8 @@ body {
   margin-bottom: 10rem;
   margin-right: auto;
   margin-left: auto;
+  
+  
 }
 
 .small-red-font {
@@ -26,9 +29,22 @@ body {
   color: var(--primary-color, darkred);
 }
 .medium-red-font {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--primary-color, darkred);
+}
+.small-black-font {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color:black;
+}
+.medium-black-font {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color:black;
+}
+.large-red-font{
+
 }
 
 /* <=| nav bar |=>*/
@@ -58,7 +74,12 @@ nav {
 /* >==> links <===< */
 a {
   text-decoration: none;
-  background-color: gray;
+  color: darkblue;
+}
+a:hover:not(.btn){
+  color: var(--primary-color);
+  font-weight: bolder;
+  transition: all 0.2s ease; 
 }
 
 /*<<========< <| MODULES|> >========>>*/

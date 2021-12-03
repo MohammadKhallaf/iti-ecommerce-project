@@ -37,16 +37,20 @@
                 </div>
               </div>
               <div class="small__img__container">
-                <img src="res/img/product03.png" alt="" class="small__img" />
+                <img
+                  src="res/img/product03.png"
+                  alt=""
+                  class="small__img small__img-active"
+                />
                 <img src="res/img/product06.png" alt="" class="small__img" />
                 <img src="res/img/product01.png" alt="" class="small__img" />
               </div>
             </div>
 
             <div class="summary__description">
-              <h1>PRODUCT NAME</h1>
+              <h1 class="medium-red-font">PRODUCT NAME</h1>
               <div class="summary__review">
-                <div class="summary__stars">
+                <div class="summary__stars small-red-font">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -54,12 +58,15 @@
                   <i class="far fa-star"></i>
                 </div>
                 <div class="summary_rvs">
-                  <span> 10 Review(s) | </span>
-                  <a href="" id="add-review">Add your review</a>
+                  <p>10 Review(s)</p>
+                  <a href="#review-form" id="add-review"> | Add your review</a>
                 </div>
               </div>
               <div class="summary__price">
-                <span id="price__span" class="medium-red-font">569$</span>
+                <span>
+                  <span id="price__span" class="price-current">569$</span>
+                  <span id="price__span" class="price-before">569$</span>
+                </span>
                 <span class="small-red-font">In stock</span>
               </div>
               <p>
@@ -70,8 +77,8 @@
               </p>
               <div class="summary__buy">
                 <div class="summary__quantity">
-                  <span>QTY</span>
-                  <input type="number" />
+                  <span>QTY &nbsp;</span>
+                  <input type="number" min="1" />
                 </div>
 
                 <a href="" class="btn" id="add-to-cart"> ADD TO CART</a>
@@ -111,189 +118,391 @@
 
         <!-- <====== PRODUCT DETAILS ======> -->
         <section class="product__details">
+          <!-- header start -->
           <div class="details__header">
-            <div>
-              <hr />
-              <div class="details__header_titles">
-                <a href="#" class="small-red-font" id="description-tab-btn"
-                  >Description</a
-                >
-                <a href="#" class="small-red-font" id="details-tab-btn"
-                  >Details</a
-                >
-                <a href="#" class="small-red-font" id="reviews-tab-btn"
-                  >Reviews(3)</a
-                >
-              </div>
-              <div class="details__section">
-                <div class="details__description">
-                  <p>
-                    Here you can put some information about your product.<br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veritatis molestiae ratione, rem, voluptatem nostrum
-                    cupiditate magnam esse aperiam adipisci ab dignissimos qui
-                    in beatae vitae at necessitatibus voluptatibus. Doloribus,
-                    quasi!
-                  </p>
-                </div>
-                <div class="details__details">
-                  <p>
-                    det Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque impedit, eaque expedita cum non saepe? Mollitia quasi
-                    placeat adipisci, necessitatibus architecto eveniet nulla
-                    deserunt id, ipsum quisquam in, dicta unde.
-                  </p>
-                </div>
-                <!--------- reviews column --------->
-                <div class="details__reviews">
-                  <div class="col__rating">
-                    <div class="row__stars">
-                      <span>4.5</span>
-                      <div class="row__stars__stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="row__full_stars_view">
-                      <div class="row__full__five">
-                        <span>some</span>
-                        <progress max="10" value="5"></progress>
-                      </div>
-                      <div class="row__full__four">
-                        <span>some</span>
-                        <progress max="10" value="5"></progress>
-                      </div>
-                      <div class="row__full__three">
-                        <span>some</span>
-                        <progress max="10" value="5"></progress>
-                      </div>
-                      <div class="row__full__two">
-                        <span>some</span>
-                        <progress max="10" value="5"></progress>
-                      </div>
-                      <div class="row__full__one">
-                        <span>some</span>
-                        <progress max="10" value="5"></progress>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col__reviews">
-                    <div class="reviews__Review">
-                      <div class="review__head">
-                        <p class="reviewer__name">John</p>
-                        <span>15 jun 2020 , 08:00AM</span>
-                        <div class="reviewer__stars row__stars__stars">
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                        </div>
-                      </div>
-                      <div class="reviewer__opinion">
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Molestiae doloremque neque tempora repellat,
-                          temporibus reprehenderit sequi deserunt nam odio amet
-                          quia facere consequuntur ex, harum, nihil cum quaerat
-                          nemo nobis?
-                        </p>
-                      </div>
-                    </div>
-                    <div class="reviews__Review">
-                      <div class="review__head">
-                        <p class="reviewer__name">John</p>
-                        <span>15 jun 2020 , 08:00AM</span>
-                        <div class="reviewer__stars row__stars__stars">
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                        </div>
-                      </div>
-                      <div class="reviewer__opinion">
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Molestiae doloremque neque tempora repellat,
-                          temporibus reprehenderit sequi deserunt nam odio amet
-                          quia facere consequuntur ex, harum, nihil cum quaerat
-                          nemo nobis?
-                        </p>
-                      </div>
-                    </div>
-                    <div class="reviews__Review">
-                      <div class="review__head">
-                        <p class="reviewer__name">John</p>
-                        <span>15 jun 2020 , 08:00AM</span>
-                        <div class="reviewer__stars row__stars__stars">
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                          <span>some</span>
-                        </div>
-                      </div>
-                      <div class="reviewer__opinion">
-                        <p>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Molestiae doloremque neque tempora repellat,
-                          temporibus reprehenderit sequi deserunt nam odio amet
-                          quia facere consequuntur ex, harum, nihil cum quaerat
-                          nemo nobis?
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <form class="col__submit_rating">
-                    <input placeholder="test" />
-                    <input placeholder="test" />
-                    <input placeholder="test" />
-
-                    <label>Your Rating</label>
-                    <input />
-                    <input type="submit" />
-                  </form>
-                </div>
-              </div>
+            <hr />
+            <div class="details__header_titles">
+              <a href="#" class="small-red-font" id="description-tab-btn"
+                >Description</a
+              >
+              <a href="#" class="small-red-font" id="details-tab-btn"
+                >Details</a
+              >
+              <a href="#" class="small-red-font" id="reviews-tab-btn"
+                >Reviews(3)</a
+              >
             </div>
+          </div>
+          <!-- header end -->
+
+          <!-- details start -->
+          <div class="details__section">
+            <!-- description start -->
+            <div class="details__description">
+              <p>
+                Here you can put some information about your product.<br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis molestiae ratione, rem, voluptatem nostrum cupiditate
+                magnam esse aperiam adipisci ab dignissimos qui in beatae vitae
+                at necessitatibus voluptatibus. Doloribus, quasi!
+              </p>
+            </div>
+            <!-- description end -->
+            <!-- details start -->
+            <div class="details__details">
+              <p>
+                det Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque impedit, eaque expedita cum non saepe? Mollitia quasi
+                placeat adipisci, necessitatibus architecto eveniet nulla
+                deserunt id, ipsum quisquam in, dicta unde.
+              </p>
+            </div>
+            <!-- details end -->
+            <!-- reviews start -->
+            <div class="details__reviews">
+              <!-- rating col start -->
+              <div class="col__rating">
+                <!-- overall rating -->
+                <div class="row__stars">
+                  <span class="medium-black-font">4.5</span>
+                  <div class="row__stars__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+
+                <!-- full review with progress - start -->
+                <div class="col__full_stars_view">
+                  <!-- first -->
+                  <div class="row__meter" data-review-id="0">
+                    <div class="row__meter__value" style="width:30%"></div>
+                  </div>
+                  <!-- first -->
+                  <div class="row__meter" data-review-id="0">
+                    <div class="row__meter__value"></div>
+                  </div>
+                  <!-- first -->
+                  <div class="row__meter" data-review-id="0">
+                    <div class="row__meter__value"></div>
+                  </div>
+                  <!-- first -->
+                  <div class="row__meter" data-review-id="0">
+                    <div class="row__meter__value"></div>
+                  </div>
+                </div>
+                <!-- full review with progress - end ^ -->
+              </div>
+              <!-- rating col end ^ -->
+
+              <!-- opinion col start -->
+              <div class="col__reviews">
+                <!-- first opinion -->
+                <div class="reviews__Review">
+                  <!-- header -->
+                  <div class="review__head">
+                    <h3 class="reviewer__name">John</h3>
+                    <span>15 jun 2020 , 08:00AM</span>
+                    <div class="reviewer__stars row__stars__stars">
+                      <div class="row__stars">
+                        <div class="row__stars__stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- section -->
+                  <div class="reviewer__opinion">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae doloremque neque tempora repellat, temporibus
+                      reprehenderit sequi deserunt nam odio amet quia facere
+                      consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                    </p>
+                  </div>
+                </div>
+
+               
+                <!-- first opinion -->
+                <div class="reviews__Review">
+                  <!-- header -->
+                  <div class="review__head">
+                    <h3 class="reviewer__name">John</h3>
+                    <span>15 jun 2020 , 08:00AM</span>
+                    <div class="reviewer__stars row__stars__stars">
+                      <div class="row__stars">
+                        <div class="row__stars__stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- section -->
+                  <div class="reviewer__opinion">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae doloremque neque tempora repellat, temporibus
+                      reprehenderit sequi deserunt nam odio amet quia facere
+                      consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                    </p>
+                  </div>
+                </div>
+
+               
+                <!-- first opinion -->
+                <div class="reviews__Review">
+                  <!-- header -->
+                  <div class="review__head">
+                    <h3 class="reviewer__name">John</h3>
+                    <span>15 jun 2020 , 08:00AM</span>
+                    <div class="reviewer__stars row__stars__stars">
+                      <div class="row__stars">
+                        <div class="row__stars__stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- section -->
+                  <div class="reviewer__opinion">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae doloremque neque tempora repellat, temporibus
+                      reprehenderit sequi deserunt nam odio amet quia facere
+                      consequuntur ex, harum, nihil cum quaerat nemo nobis?
+                    </p>
+                  </div>
+                </div>
+
+               
+
+                
+              </div>
+              <!-- opinion col end ^ -->
+              <!-- <div class="col__submit_review"> -->
+              <form class="col__submit_review" id="review-form">
+                <input placeholder="Your Name" />
+                <input placeholder="Your Email" />
+                <textarea rows="4" placeholder="Your Review"></textarea>
+                <label>Your Rating</label>
+                <input type="submit" class="btn" value="submit" />
+              </form>
+              <!-- </div> -->
+            </div>
+
+            <!-- reviews end -->
+            <!---------->
+
             <div style="font-weight: bold">
               <br />HERE I WILL PUT SOME SORT OF THINGS BUT NOT NOW ...
             </div>
           </div>
         </section>
       </main>
+      <!---- <===| RELATED PRODUCTS |===> -->
       <setion class="product related__products">
         <h3 style="text-align: center">RELATED PRODUCTS</h3>
-        <div class="related__products__container">
-          <div class="related__item">
-            <img src="res/img/product09.png" alt="" />
-            <p>gedededed</p>
-            <p>gedededed</p>
-            <p>gedededed</p>
+        <div class="related__container">
+          <!-- arrows start -->
+          <div class="related__arrow_right">
+            <i class="fas fa-angle-right"></i>
           </div>
-          <div class="related__item">
-            <img src="res/img/product09.png" alt="" />
-            <p>gedededed</p>
-            <p>gedededed</p>
-            <p>gedededed</p>
+          <div class="related__arrow_left">
+            <i class="fas fa-angle-left"></i>
           </div>
-          <div class="related__item">
-            <img src="res/img/product09.png" alt="" />
-            <p>gedededed</p>
-            <p>gedededed</p>
-            <p>gedededed</p>
-          </div>
-          <div class="related__item">
-            <img src="res/img/product09.png" alt="" />
-            <p>gedededed</p>
-            <p>gedededed</p>
-            <p>gedededed</p>
+          <!-- arrows end -->
+          <!-- product container start -->
+          <div class="related__container__scroll">
+            <div class="related__products__container">
+              <!-- item start -->
+              <div class="related__item__container">
+                <div class="related__item">
+                  <img src="res/img/product09.png" alt="" />
+                  <p class="related__item_category">category</p>
+                  <p class="related__item_name">Camera</p>
+                  <p class="related__item_price">
+                    <span class="price-current">$499</span>
+                    <span class="price-before">$500</span>
+                  </p>
+                  <div class="related__item__footer">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-th-list"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+                <div class="related__item__drop">
+                  <a class="btn">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+              <!-- ======================== -->
+              <!-- item start -->
+              <div class="related__item__container">
+                <div class="related__item">
+                  <img src="res/img/product09.png" alt="" />
+                  <p class="related__item_category">category</p>
+                  <p class="related__item_name">Camera</p>
+                  <p class="related__item_price">
+                    <span class="price-current">$499</span>
+                    <span class="price-before">$500</span>
+                  </p>
+                  <div class="related__item__footer">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-th-list"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+                <div class="related__item__drop">
+                  <a class="btn">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+              <!-- ======================== -->
+              <!-- item start -->
+              <div class="related__item__container">
+                <div class="related__item">
+                  <img src="res/img/product09.png" alt="" />
+                  <p class="related__item_category">category</p>
+                  <p class="related__item_name">Camera</p>
+                  <p class="related__item_price">
+                    <span class="price-current">$499</span>
+                    <span class="price-before">$500</span>
+                  </p>
+                  <div class="related__item__footer">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-th-list"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+                <div class="related__item__drop">
+                  <a class="btn">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+              <!-- ======================== -->
+              <!-- item start -->
+              <div class="related__item__container">
+                <div class="related__item">
+                  <img src="res/img/product09.png" alt="" />
+                  <p class="related__item_category">category</p>
+                  <p class="related__item_name">Camera</p>
+                  <p class="related__item_price">
+                    <span class="price-current">$499</span>
+                    <span class="price-before">$500</span>
+                  </p>
+                  <div class="related__item__footer">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-th-list"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+                <div class="related__item__drop">
+                  <a class="btn">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+              <!-- ======================== -->
+              <!-- item start -->
+              <div class="related__item__container">
+                <div class="related__item">
+                  <img src="res/img/product09.png" alt="" />
+                  <p class="related__item_category">category</p>
+                  <p class="related__item_name">Camera</p>
+                  <p class="related__item_price">
+                    <span class="price-current">$499</span>
+                    <span class="price-before">$500</span>
+                  </p>
+                  <div class="related__item__footer">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-th-list"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+                <div class="related__item__drop">
+                  <a class="btn">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+              <!-- ======================== -->
+              <!-- item start -->
+              <div class="related__item__container">
+                <div class="related__item">
+                  <img src="res/img/product09.png" alt="" />
+                  <p class="related__item_category">category</p>
+                  <p class="related__item_name">Camera</p>
+                  <p class="related__item_price">
+                    <span class="price-current">$499</span>
+                    <span class="price-before">$500</span>
+                  </p>
+                  <div class="related__item__footer">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-th-list"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+                <div class="related__item__drop">
+                  <a class="btn">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+              <!-- ======================== -->
+              <!-- item start -->
+              <div class="related__item__container">
+                <div class="related__item">
+                  <img src="res/img/product09.png" alt="" />
+                  <p class="related__item_category">category</p>
+                  <p class="related__item_name">Camera</p>
+                  <p class="related__item_price">
+                    <span class="price-current">$499</span>
+                    <span class="price-before">$500</span>
+                  </p>
+                  <div class="related__item__footer">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-th-list"></i>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+                <div class="related__item__drop">
+                  <a class="btn">
+                    <i class="fas fa-cart-plus"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+              <!-- ======================== -->
+              <!-- item end -->
+             
+            </div>
+            <!-- product container end ^ -->
           </div>
         </div>
       </setion>
