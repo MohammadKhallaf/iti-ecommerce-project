@@ -1,22 +1,85 @@
-.main-aside {
-  background-color: black;
+html {
+  scroll-behavior: smooth;
 }
-.main-aside *{
-    color: white;
+/* navbar */
+.navbar {
+  /* height: 3rem; */
+  background: #ddd;
 }
+.navbar::after {
+  width: 100vw;
+  height: 1rem;
+  background: red;
+}
+.navbar ul {
+  font-size: 1rem;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  word-break: keep-all;
+  /* align-items: center; */
+}
+
+.navbar a {
+  padding: 0.7rem;
+  display: block;
+  /* width: 7rem; */
+  text-align: center;
+  /* background: chocolate; */
+}
+.navbar a:hover {
+  background: cornsilk;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: space-evenly;
+  }
+  .navbar a:hover {
+    background: none;
+  }
+}
+
+/* breadcrumb */
+.breadcrumb {
+  padding-left: 9%;
+}
+.breadcrumb ul {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.breadcrumb li + li::before {
+  content: "/ ";
+  padding-left: 0.4rem;
+  padding-right: 0.6rem;
+}
+
+/* _______________ */
+
 .wrapper {
+  margin: 0;
+  padding: 0;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 5fr;
   grid-template-areas:
     "header header"
     "aside    content"
-    "aside    content"
-    "footer footer";
+    "aside    content";
+  /* "footer footer"; */
 }
 
 .main-head {
   grid-area: header;
+  background-color: wheat;
 }
 .content {
   grid-area: content;
@@ -35,18 +98,22 @@
   grid-area: footer;
 }
 
-
-
-
-aside{
-    position: absolute;
-    width:300px;
-    z-index: 10;
+/*<<=====|CATEGORY|=====>>*/
+.category__header {
+  padding-bottom: 2rem;
 }
+
+.category__list {
+  padding-left: 1rem;
+}
+
+.category__item {
+}
+
 .products__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-  /* grid-column-gap: 1.5rem; */
+  grid-column-gap: 1rem;
 }
 
 /* <-----------> */
@@ -135,4 +202,136 @@ aside{
   width: 80%;
   display: flex;
   justify-content: space-evenly;
+}
+
+/* footer */
+
+/* added from main style */
+.quarterSize {
+  position: relative;
+  width: 25%;
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#footer {
+  background: #15161d;
+  color: #b9babc;
+  margin-bottom: 0px !important;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.42857143;
+  overflow-x: hidden;
+}
+.footer_container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
+  height: 320px;
+}
+.footer_row {
+  width: 1170px;
+  text-align: left;
+}
+.footer_row div h3 {
+  margin: auto;
+  text-align: left;
+  margin-left: 36px !important;
+}
+.footer_row div div ul {
+  text-align: left;
+}
+.footer .footer-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0px 0px 30px;
+}
+
+/* ________________ */
+#bottom-footer {
+  height: 1.5rem;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bottom-footer a {
+  color: var(--accent-primary-color);
+}
+li {
+  list-style: none;
+  text-align: -webkit-match-parent;
+}
+ul {
+  list-style-type: none;
+}
+#footer a {
+  text-decoration: none;
+  color: #ffffff !important;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+
+
+
+/* <====<| My footer |>====> */
+.main-footer {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background: #15161d;
+  color: whitesmoke;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "about-head"
+    "about-det"
+    "cat-head"
+    "cat-det"
+    "info"
+    "inf-link"
+    "service"
+    "serv-link"
+    ;
+  column-gap: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .main-footer {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "about-head cat-head info service"
+      "about-det cat-det inf-link serv-link";
+    column-gap: 1rem;
+  }
+}
+.about-header {
+  grid-area: about-head;
+}
+.about-details {
+  grid-area: about-det;
+}
+.categ-head {
+  grid-area: cat-head;
+}
+.categ-details {
+  grid-area: cat-det;
+}
+.information {
+  grid-area: info;
+}
+.info-details {
+  grid-area: inf-link;
+}
+.service-head {
+  grid-area: service;
+}
+.service-details {
+  grid-area: serv-link;
 }
