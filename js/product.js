@@ -2,7 +2,7 @@
 
 var firstSrc;
 
-let itemKey = sessionStorage.getItem("ItemKey");
+let itemKey = sessionStorage.getItem("ItemKey") || 0;
 var product = productsList[itemKey];
 firstSrc = product.imgSrc;
 /*<<==========| PAGE-ELEMENTS |==========>>*/
@@ -31,15 +31,13 @@ const detailsTabButton = document.getElementById("details-tab-btn");
 const reviewsTabButton = document.getElementById("reviews-tab-btn");
 /*<-------details__tabs-------->*/
 const detailsSectionView = document.querySelector(".details__section");
-const detailsHeaderTitles= document.querySelector('.details__header_titles')
+const detailsHeaderTitles = document.querySelector(".details__header_titles");
 
 const descriptionView = detailsSectionView.querySelector(
   ".details__description"
 );
 const detailsView = detailsSectionView.querySelector(".details__details");
 const reviewsView = detailsSectionView.querySelector(".details__reviews");
-
-
 
 /*<-------related_products__view----------------->*/
 const relatedScrollView = document.querySelector(".related__container__scroll");
@@ -49,9 +47,9 @@ const relatedLeftArrow = document.querySelector(".related__arrow_left");
 /**
  * product views
  */
-const productNameView = document.getElementById('product-name')
-const currentPriceView = document.getElementById('current__price__span')
-const oldPriceView = document.getElementById('old__price__span')
+const productNameView = document.getElementById("product-name");
+const currentPriceView = document.getElementById("current__price__span");
+const oldPriceView = document.getElementById("old__price__span");
 /*<<==========| GLOABL-VARIABLES |==========>>*/
 const productImgSrc = [
   firstSrc,
@@ -65,7 +63,6 @@ mainImageView.src = productImgSrc[currentImgIndex];
 smallImages.forEach((element, index) => {
   element.src = productImgSrc[index];
 });
-
 
 /*<<==========| GLOBAL-FUNCTIONS |==========>>*/
 
@@ -97,7 +94,9 @@ const addToCartHandler = (e) => {
 };
 const addReviewHandler = (e) => {
   reviewsTabHandler(e, true);
-  document.getElementById("reviews-tab-btn").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("reviews-tab-btn")
+    .scrollIntoView({ behavior: "smooth" });
   // e.preventDefault();
 };
 const addWishHandler = (e) => {
@@ -121,7 +120,7 @@ const mailShare = (e) => {
 const descriptionTabHandler = (e) => {
   e.preventDefault();
   descriptionView.classList.toggle("details--active");
-  descriptionTabButton.classList.toggle('header_titles--active')
+  descriptionTabButton.classList.toggle("header_titles--active");
   for (const element of detailsSectionView.children) {
     if (element.classList.contains("details__description")) continue;
     element.classList.remove("details--active");
@@ -131,12 +130,11 @@ const descriptionTabHandler = (e) => {
     if (element.id == "description-tab-btn") continue;
     element.classList.remove("header_titles--active");
   }
-  
 };
 const detailsTabHandler = (e) => {
   e.preventDefault();
   detailsView.classList.toggle("details--active");
-  detailsTabButton.classList.toggle('header_titles--active')
+  detailsTabButton.classList.toggle("header_titles--active");
   for (const element of detailsSectionView.children) {
     if (element.classList.contains("details__details")) continue;
     element.classList.remove("details--active");
@@ -146,8 +144,6 @@ const detailsTabHandler = (e) => {
     if (element.id == "details-tab-btn") continue;
     element.classList.remove("header_titles--active");
   }
-  
-
 };
 const reviewsTabHandler = (e, show) => {
   e.preventDefault();
@@ -155,19 +151,17 @@ const reviewsTabHandler = (e, show) => {
   } else {
     detailsView.classList.toggle("details--active");
     reviewsView.classList.toggle("details__reviews--active");
-    reviewsTabButton.classList.toggle('header_titles--active')
+    reviewsTabButton.classList.toggle("header_titles--active");
 
     for (const element of detailsSectionView.children) {
       if (element.classList.contains("details__reviews")) continue;
       element.classList.remove("details--active");
     }
-    
+
     for (const element of detailsHeaderTitles.children) {
       if (element.id == "reviews-tab-btn") continue;
       element.classList.remove("header_titles--active");
     }
-    
-
   }
 };
 
@@ -202,10 +196,6 @@ const changeImage = (ImgIndex) => {
   });
 };
 
-
- 
-
-
 /*<<==========| PAGE-EVENTS |==========>>*/
 
 /*<-large image-->*
@@ -233,11 +223,11 @@ reviewsTabButton.addEventListener("click", reviewsTabHandler);
 relatedRightArrow.addEventListener("click", rltdRightArrowhandler);
 relatedLeftArrow.addEventListener("click", rltdLeftArrowhandler);
 /*<---------------->*/
-window.onload=()=>{
+window.onload = () => {
   // itemKey = sessionStorage.getItem("ItemKey");
   // var product = productsList[itemKey];
-  productNameView.innerText =  product.name;
-  currentPriceView.innerText ="$"+ product.newPrice
-  oldPriceView.innerText = "$"+ product.oldPrice
-  mainImageView.src =product.imgSrc;
-}
+  productNameView.innerText = product.name;
+  currentPriceView.innerText = "$" + product.newPrice;
+  oldPriceView.innerText = "$" + product.oldPrice;
+  mainImageView.src = product.imgSrc;
+};
