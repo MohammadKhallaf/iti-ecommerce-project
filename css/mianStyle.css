@@ -571,7 +571,7 @@ ul li a:hover
   border-radius: 0px 40px 40px 0px;
 }
 .newsletter form:after {
-  content: "\f003";
+  content: "\f003";   /*-------msgicon-------*/
   font-family: FontAwesome;
   position: absolute;
   font-size: 160px;
