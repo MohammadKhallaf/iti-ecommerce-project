@@ -93,11 +93,55 @@
 		<div class="procuctsAll">
 			
 		</div>
-		<form>
-			<label for="name"> name</label>
-			<input name="name"type="text" >
-		<button class="check-ptn" value=""> Checkout</button>
-	    </form>
+		<div id="checkoutForm">
+			<form action="welcome.html">
+				<fieldset>
+					<legend>Check Out</legend>
+					<div>
+						<label for="userName">Name:</label>
+						<input placeholder="Enter Your Full Name" id="userName" name="userName" value="" required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" aria-required="true" aria-describedby="name-format">
+						<span id="name-format" class="help">Format: firstname lastname</span>
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input placeholder="Enter Your Mail" type="email" id="email" name="email" value="" required aria-required="true">
+					</div>
+					<div>
+						<label>City: </label>
+						<select required aria-required="true">
+							<option value="" selected disabled hidden>select city</option>
+							<option value="1">Smart</option>
+							<option value="2">Asuit</option>
+							<option value="3">Smart</option>
+							<option value="4">Asuit</option>
+							<option value="5">Smart</option>
+							<option value="6">Asuit</option>
+						</select>
+					</div>
+					<div>
+						<label for="address">Address:</label>
+						<input placeholder="Enter Your Address" type="text" name="Address" value="" required>
+				
+					<div>
+						<input type="checkbox" name="agree" value="" required aria-required="true" min="1">
+						<label for="agree" class="agree">*I accept the terms and conditions.</label>
+						
+					   
+						
+					</div>
+					<div>
+						<input id="rememberMe" type="checkbox" name="agree" value="">
+						<label for="agree" class="agree" checked>*Cash on Delivery!</label>
+						
+						
+						
+					</div> 
+					<div class="submit">
+						<input type="submit" value="CheckOut" onclick="lsRememberMe()">
+					</div>
+				</fieldset>
+			</form>
+		</div>
 	</div>
 
 	
