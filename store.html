@@ -5,27 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" href="./res/img/iti_logo.png" />
-    <!-- Google font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
-      rel="stylesheet"
-    />
     <link href="./css/all.min.css" rel="stylesheet" />
     <!-- <link  rel="stylesheet" href="./css/mianStyle.css"/> -->
     <link href="./css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/product.css" />
     <!-- Custom stlylesheet -->
-    <link rel="stylesheet" href="./css/store.css" />
 
+    <link rel="stylesheet" href="./css/playaround.css" />
     <script src="./js/store.js" defer></script>
   </head>
   <body>
+    <header class="main-head">
+      <nav class="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Hot Deals</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Smartphones</a></li>
+          <li><a href="#">Cameras</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </nav>
+      <nav class="breadcrumb">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="">Category</a></li>
+          <li><a href="">Sub-Category</a></li>
+          <li><span aria-current="page">Product</span></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- PAGE CONTENT -->
     <div class="page__content">
-      <div class="products__grid">
-        <!--|== here is the products ;) ==|-->
+      <div class="wrapper">
+        <aside class="main-aside">
+          <h1 class="category__header">Categories</h1>
 
+          <div class="category__list"></div>
+        </aside>
+        <article class="content">
+          <div class="products__grid">
+            <!--|== here is the products ;) ==|-->
+          </div>
+        </article>
       </div>
     </div>
+    <!-- PAGE CONTENT END -->
+
+    <!--  -->
+
+    <footer id="footer">
+			<!-- top footer -->
+			<div class="footer_section">
+				<div class="footer_container">
+					<div class="footer_row">
+						<div class="quarterSize">
+							<div class="footer">
+								<h3 class="footer-title">About Us</h3>
+								<p>Lorem reprehenderit alias natus, deserunt, perspiciatis recusandae velit illum? Impedit laboriosam provident deleniti dolorem ea. </p>
+								<ul class="footer-links">
+									<li><a href="tel:+0201090963906"><i class="fa fa-phone"></i> +02-010-906-3906</a></li>
+									<li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i> Electro@gmail.com</a></li>
+									<li><a onclick="goPosition()"><i class="fa fa-map-marker"></i> Gleem Beach, San Stefano</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="quarterSize">
+							<div class="footer">
+								<h3 class="footer-title">Categories</h3>
+								<ul class="footer-links">
+									<li><a href="#">Hot deals</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Smartphones</a></li>
+									<li><a href="#">Cameras</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="quarterSize">
+							<div class="footer">
+								<h3 class="footer-title">Information</h3>
+								<ul class="footer-links">
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Orders and Returns</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="quarterSize">
+							<div class="footer">
+								<h3 class="footer-title">Service</h3>
+								<ul class="footer-links">
+									<li><a href="#">My Account</a></li>
+									<li><a href="#">View Cart</a></li>
+									<li><a href="#">Wishlist</a></li>
+									<li><a href="#">Track My Order</a></li>
+									<li><a href="#">Help</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    <!-- bottom footer -->
+
+    <!-- <footer class="main-footer">
+      <div class="about-header">
+        About Us
+      </div>
+      <div class="about-details">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi necessitatibus illo deleniti laboriosam sunt quaerat assumenda placeat dolore accusantium ad, nam error autem, quam dolorum deserunt cum vero ab beatae?
+        <ul class="footer-links">
+          <li><a href="tel:+0201090963906"><i class="fa fa-phone"></i> +02-010-906-3906</a></li>
+          <li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i> Electro@gmail.com</a></li>
+          <li><a onclick="goPosition()"><i class="fa fa-map-marker"></i> Gleem Beach, San Stefano</a></li>
+        </ul>
+      </div>
+      <div class="categ-head">
+        Categories
+      </div>
+      <div class="categ-details">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus minima commodi voluptatibus laboriosam voluptas eius, animi eos excepturi itaque mollitia, quos, a pariatur. Provident architecto hic consectetur iure itaque in!
+      </div>
+      <div class="information">
+        Information
+      </div>
+      <div class="info-details">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione id molestiae, quisquam eum explicabo nisi velit est dolore repudiandae et tenetur quae odio? Earum similique necessitatibus numquam saepe ab nemo.
+      </div>
+      <div class="service-head">
+        Services
+      </div>
+      <div class="service-details">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo illum possimus ab architecto dicta iusto sit, aliquid odio earum provident magnam nesciunt voluptatum nemo deserunt itaque. Natus sequi recusandae mollitia.
+      </div>
+    </footer> -->
+
+
+
+    <div id="bottom-footer" class="section">
+      <a target="_self" href="#">copyright&copy; Team1</a>
+    </div>
+    <!-- /bottom footer -->
+
+
+
+    
   </body>
 </html>

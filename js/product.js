@@ -161,7 +161,7 @@ const changeImage = (ImgIndex) => {
     }
   });
 };
-/*________EVENTS________*/
+/*<<==========| PAGE-EVENTS |==========>>*/
 
 /*<-large image-->*
 
