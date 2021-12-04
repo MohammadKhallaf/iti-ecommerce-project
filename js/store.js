@@ -3,11 +3,6 @@
 const productGrid = document.querySelector(".products__grid");
 const categoryListView = document.querySelector(".category__list");
 /*<<==========| GLOBAL-VARIABLES |==========>>*/
-
-/*<<==========| GLOABAL-FUNCTIONS |==========>>*/
-
-/*<<==========| HELPER-FUNCTIONS |==========>>*/
-
 const productsList = [
   {
     imgSrc: "./res/img/product01.png",
@@ -100,17 +95,18 @@ const productsList = [
     wishlisted: false,
   },
 ];
+/*<----------------------->*/
 
 
-const buildTemplate = (index) => {
+const buildTemplate = (index , array = productsList) => {
   let template = `
   <div class="store__item">
-  <img src=${productsList[index].imgSrc} alt="" />
-  <p class="store__item_category">${productsList[index].category}</p>
-  <p class="store__item_name">${productsList[index].name}</p>
+  <img src=${array[index].imgSrc} alt="" />
+  <p class="store__item_category">${array[index].category}</p>
+  <p class="store__item_name">${array[index].name}</p>
   <p class="store__item_price">
-    <span class="price-current">$${productsList[index].newPrice}</span>
-    <span class="price-before">$${productsList[index].oldPrice}</span>
+    <span class="price-current">$${array[index].newPrice}</span>
+    <span class="price-before">$${array[index].oldPrice}</span>
     </p>
     <div class="store__item__footer">
     <i class="far fa-heart"></i>
@@ -133,6 +129,29 @@ const buildTemplate = (index) => {
   return template;
 };
 
+/*<<==========| GLOABAL-FUNCTIONS |==========>>*/
+const clearChoice = () =>{
+  buildFullProducts(true);
+  let checkboxes = [...document.querySelectorAll('input[type="radio"]')]
+  checkboxes.forEach(element=>{
+    console.log(element)
+    element.checked = false
+  })
+}
+/*<<==========| HELPER-FUNCTIONS |==========>>*/
+const filterResults = (categName) => {
+const specialCategoryList = productsList.filter(productsList => productsList.category === categName)
+let pageHTML = '';
+for (let i = 0; i < specialCategoryList.length; i++) {
+  pageHTML += '\n <div class="store__item__container">' + buildTemplate(i,specialCategoryList) + '</div>';
+  productGrid.innerHTML = pageHTML;
+}
+
+}
+
+/*<<========================================>>*/
+
+
 const buildCategoryList = () => {
   /** Build unique categries array */
   let categoryList = productsList.map((element) => {
@@ -147,9 +166,15 @@ const buildCategoryList = () => {
     let choiceContainer = document.createElement("div");
     choiceContainer.classList.add("category__item")
     let choice = document.createElement("input");
-    choice.type = "checkbox";
-    choice.name = `cat-${index}`;
+    choice.type = "radio";
+    // choice.type = "checkbox";
+    choice.name = "category"
+    // choice.name = `cat-${index}`;
     choice.id = `cat-${index}`;
+    choice.setAttribute("data-cat",`${categoryName}`);
+    choice.addEventListener('change',(e)=>{
+     filterResults(choice.getAttribute("data-cat"))
+    })
     choiceContainer.appendChild(choice);
     let choiceLabel = document.createElement("label");
     choiceLabel.setAttribute("for", `cat-${index}`);
@@ -157,17 +182,21 @@ const buildCategoryList = () => {
     choiceContainer.appendChild(choiceLabel);
     fragment.appendChild(choiceContainer)
   });
+
   categoryListView.appendChild(fragment);
 };
-
-for (let i = 0; i < productsList.length; i++) {
-  let element = document.createElement("div");
-  element.className = "store__item__container";
-  element.innerHTML = buildTemplate(i);
-  productGrid.appendChild(element);
+const buildFullProducts=  (isToRemove) =>{
+if(isToRemove) {productGrid.innerHTML = ''}
+  for (let i = 0; i < productsList.length; i++) {
+    let element = document.createElement("div");
+    element.className = "store__item__container";
+    element.innerHTML = buildTemplate(i);
+    productGrid.appendChild(element);
+  }
+  
 }
-
 /*<<==========| PAGE-EVENTS |==========>>*/
 window.onload = () => {
+  buildFullProducts();
   buildCategoryList();
 };
