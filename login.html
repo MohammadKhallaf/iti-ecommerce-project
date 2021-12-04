@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>E-Ecommerce</title>
+	<title>LogIn</title>
 	<link rel="icon" href="./res/img/iti_logo.png">
 
 	<!-- Google font -->
@@ -43,7 +43,7 @@
 					<!-- LOGO -->
 					<div class="quarterSize">
 						<div class="header-logo">
-							<a href="#" class="logo">
+							<a href="file:///F:/ITI/Projects/JS/iti-ecommerce-project/index.html" class="logo">
 
 								<img src="./res/img/iti_logo.png" alt="">
 							</a>
@@ -105,7 +105,7 @@
 						<br><input type="checkbox" id="show1" onclick="showpass1()">Show Password
 
 						<br> <input type="checkbox" id="rememberme1">Remember me
-						<br> <input type="submit" value="Sign in" id="signInButton">
+						<br> <input type="submit" value="Sign in" id="signInButton" onclick="lsRememberMe()">
 					</form>
 				</div>
 			</div>
@@ -148,7 +148,7 @@
 						<br> <input type="checkbox" id="rememberme2">Remember me
 
 
-						<br> <input type="submit" value="Sign up" id="signupsubmit">
+						<br> <input type="submit" value="Sign up" id="signupsubmit" onclick="lsRememberMe2()">
 					</form>
 				</div>
 			</div>
@@ -203,8 +203,8 @@
 								laboriosam provident deleniti dolorem ea. </p>
 							<ul class="footer-links">
 								<li><a href="tel:+0201090963906"><i class="fa fa-phone"></i> +02-010-906-3906</a></li>
-								<li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i>
-										Electro@gmail.com</a></li>
+								<li><a href="mailto:ITI@gmail.com"><i class="fa fa-envelope-o"></i>
+										ITI@gmail.com</a></li>
 								<li><a onclick="goPosition()"><i class="fa fa-map-marker"></i> Gleem Beach, San
 										Stefano</a></li>
 							</ul>
@@ -365,6 +365,44 @@
 				document.getElementById('matching').innerHTML = 'not matching';
 			}
 		}
+		const rmCheck = document.getElementById("rememberme1"),
+            userInput = document.getElementById("yourNameInput");
+        if (localStorage.checkbox && localStorage.checkbox !== "") {
+            rmCheck.setAttribute("checked");
+            userInput.value = localStorage.yourNameInput;
+        } else {
+            rmCheck.removeAttribute("checked");
+            userInput.value = "";
+        }
+        function lsRememberMe() {
+            if (rmCheck.checked && userInput.value !== "") {
+                localStorage.yourNameInput = userInput.value;
+                localStorage.checkbox = rmCheck.value;
+            } else {
+                localStorage.yourNameInput = "";
+                localStorage.checkbox = "";
+            }
+        }
+		const rmChecksinUp = document.getElementById("rememberme2")
+         // userInput = document.getElementById("yourNameInput");
+        if (localStorage.checkbox && localStorage.checkbox   !== "") {
+            rmChecksinUp.setAttribute("checked");
+            userInput.value = localStorage.yourNameInput;
+        } else {
+            rmChecksinUp.removeAttribute("checked");
+            userInput.value = "";
+        }
+        function lsRememberMe2() {
+            if (rmChecksinUp.checked && userInput.value !== "") {
+                localStorage.yourNameInput = userInput.value;
+                localStorage.checkbox = rmChecksinUp.value;
+            } else {
+                localStorage.yourNameInput = "";
+                localStorage.checkbox = "";
+            }
+        }
+
+
 	</script>
 </body>
 
