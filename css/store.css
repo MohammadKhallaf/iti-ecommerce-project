@@ -1,6 +1,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* ==|MAIN HEAD|== */
+/* --|Top Header|== */
+.top-header{
+  height: 7rem;
+  background: #15161d;
+  color: #ddd;
+  display: flex;
+}
+.header__icons{
+
+}
 /* navbar */
 .navbar {
   /* height: 3rem; */
@@ -79,7 +91,7 @@ html {
 
 .main-head {
   grid-area: header;
-  background-color: wheat;
+  /* background-color: wheat; */
 }
 .content {
   grid-area: content;
@@ -119,7 +131,7 @@ html {
 /* <-----------> */
 
 .store__item__container {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   max-width: 100%;
   cursor: pointer;
   /* padding-bottom: 1rem; */
@@ -129,9 +141,9 @@ html {
   align-items: center;
 }
 .store__item {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-bottom: 1rem;
-  /* border: 1px solid rgba(0, 0, 0, 0.01); */
+  border: 1px solid rgba(0, 0, 0, 0.01);
   transition: all 0.5s;
   display: flex;
   flex-direction: column;
