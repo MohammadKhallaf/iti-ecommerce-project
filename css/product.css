@@ -243,14 +243,12 @@
   padding-left: 4px;
   background: white;
   color: gray;
-
 }
-.header_titles--active{
+.header_titles--active {
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--primary-color);
   color: var(--primary-color) !important;
 }
-
 
 @media only screen and (max-width: 600px) {
   .details__header hr {
@@ -611,3 +609,12 @@ textarea::placeholder {
 /* .related__item__footer i{
   padding-top: 13px;
 } */
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
