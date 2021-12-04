@@ -571,7 +571,7 @@ ul li a:hover
   border-radius: 0px 40px 40px 0px;
 }
 .newsletter form:after {
-  content: "\f003";
+  content: "\f003";   /*-------msgicon-------*/
   font-family: FontAwesome;
   position: absolute;
   font-size: 160px;
@@ -1144,6 +1144,74 @@ i.fa-shopping-cart:active , i.fa-shopping-cart:active
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
+}
+
+fieldset > div 
+{
+    margin:15px 0;
+}
+fieldset > legend + div {
+    margin-top:0;
+}
+fieldset > div:last-child {
+    margin-bottom:0;
+}
+#checkoutForm label {
+    display:inline-block;
+    width:100px;
+    font-weight: bold;
+}
+#checkoutForm label.agree {
+    display:inline-block;
+    width:280px;
+    font-size:14px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#checkoutForm input[name="agree"]
+{
+    width: 20px;
+    display:inline-block;
+}
+#checkoutForm input {
+    width:200px;
+}
+#checkoutForm input[type="number"] {
+    width:30px;
+}
+#checkoutForm div > input[type="submit"] {
+    background: #ccc;
+    border:1px solid #999;
+    width:auto;
+}
+#checkoutForm input:required {
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+}
+#checkoutForm input:optional {
+    background:hsl(300, 50%, 90%);
+    border:1px dotted hsl(180, 50%, 90%);
+}
+#checkoutForm input:valid,
+#checkoutForm input:in-range {
+    background:hsl(120, 50%, 90%);
+    border-color:hsl(120, 50%, 50%);
+}
+
+#checkoutForm input:invalid,
+#checkoutForm input:out-of-range {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}
+#checkoutForm .help {
+    display:none;
+    font-size:90%;
+}
+#checkoutForm input:focus + .help {
+    display:inline-block;
+}
+#checkoutForm div.submit {
+    margin-left:100px;
 }
 
 

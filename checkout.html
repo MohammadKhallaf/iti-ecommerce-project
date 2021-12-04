@@ -10,7 +10,7 @@
 	<!-- Custom stlylesheet -->
 	<link  rel="stylesheet" href="./css/mianStyle.css"/>
 	<script src="https://kit.fontawesome.com/d0259d1f22.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>checkout</title>
 </head>
 <body>
 	<!-- TOP HEADER -->
@@ -36,7 +36,7 @@
 					<!-- LOGO -->
 					<div class="quarterSize">
 						<div class="header-logo">
-							<a href="#" class="logo">
+							<a href="index.html" class="logo">
 								
 								<img src="./res/img/iti_logo.png" alt="">
 							</a>
@@ -93,7 +93,58 @@
 		<div class="procuctsAll">
 			
 		</div>
+		<div id="checkoutForm">
+			<form action="welcome.html">
+				<fieldset>
+					<legend>Check Out</legend>
+					<div>
+						<label for="userName">Name:</label>
+						<input placeholder="Enter Your Full Name" id="userName" name="userName" value="" required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" aria-required="true" aria-describedby="name-format">
+						<span id="name-format" class="help">Format: firstname lastname</span>
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input placeholder="Enter Your Mail" type="email" id="email" name="email" value="" required aria-required="true">
+					</div>
+					<div>
+						<label>City: </label>
+						<select required aria-required="true">
+							<option value="" selected disabled hidden>select city</option>
+							<option value="1">Smart</option>
+							<option value="2">Asuit</option>
+							<option value="3">Smart</option>
+							<option value="4">Asuit</option>
+							<option value="5">Smart</option>
+							<option value="6">Asuit</option>
+						</select>
+					</div>
+					<div>
+						<label for="address">Address:</label>
+						<input placeholder="Enter Your Address" type="text" name="Address" value="" required>
+				
+					<div>
+						<input type="checkbox" name="agree" value="" required aria-required="true" min="1">
+						<label for="agree" class="agree">*I accept the terms and conditions.</label>
+						
+					   
+						
+					</div>
+					<div>
+						<input id="rememberMe" type="checkbox" name="agree" value="">
+						<label for="agree" class="agree" checked>*Cash on Delivery!</label>
+						
+						
+						
+					</div> 
+					<div class="submit">
+						<input type="submit" value="CheckOut" onclick="lsRememberMe()">
+					</div>
+				</fieldset>
+			</form>
+		</div>
 	</div>
+
+	
 
 
 	<!-- NEWSLETTER -->
@@ -140,7 +191,7 @@
 							<p>Lorem reprehenderit alias natus, deserunt, perspiciatis recusandae velit illum? Impedit laboriosam provident deleniti dolorem ea. </p>
 							<ul class="footer-links">
 								<li><a href="tel:+0201090963906"><i class="fa fa-phone"></i> +02-010-906-3906</a></li>
-								<li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i> Electro@gmail.com</a></li>
+								<li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i> iti@gmail.com</a></li>
 								<li><a onclick="goPosition()"><i class="fa fa-map-marker"></i> Gleem Beach, San Stefano</a></li>
 							</ul>
 						</div>

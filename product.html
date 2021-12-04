@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/store.css">
     <link rel="stylesheet" href="./css/product.css" />
     <!-- Custom stlylesheet -->
-
+<script src="./js/data.js" defer></script>
     <script src="./js/product.js" defer></script>
   </head>
   <body>
@@ -25,12 +25,12 @@
       <div id="top-header" >
         <div class="topHeader_container" >
           <ul class="header-links pull-left" >
-            <li><a href="tel:+0201090963906"><i class="fa fa-phone"></i><b> CALL US</b></a></li>
-            <li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i><b> EMAIL</b></a></li>
+            <li><a href="tel:+0201029149153"><i class="fa fa-phone"></i><b> CALL US</b></a></li>
+            <li><a href="mailto:mohammed.khallaf.1997@gmail.com"><i class="fa fa-envelope"></i><b> EMAIL</b></a></li>
             <li><a onclick="goPosition()"><i class="fa fa-map-marker"></i><b> LOCATION</b></a></li>
           </ul>
           <ul class="header-links pull-right">
-            <li><a href="#"><i class="fa fa-user-o"></i><b> Sign in</b></a></li>
+            <li><a href="./login.html"><i class="fa fa-user"></i><b> Sign in</b></a></li>
           </ul>
         </div>
       </div>
@@ -44,7 +44,7 @@
               <!-- LOGO -->
               <div class="quarterSize">
                 <div class="header-logo">
-                  <a href="#" class="logo">
+                  <a href="./index.html" class="logo">
                     
                     <img src="./res/img/iti_logo.png" alt="">
                   </a>
@@ -76,7 +76,7 @@
   
                   <!-- Cart -->
                   <div class="cart">
-                    <a id="basket" data-toggle="dropdown" aria-expanded="true">
+                    <a id="basket" data-toggle="dropdown" aria-expanded="true" href="./checkout.html">
                       <i class="fa fa-shopping-basket"></i>
                       <span id="basketNumber">0</span>
                     </a>
@@ -97,7 +97,7 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="#">Hot Deals</a></li>
-          <li><a href="#">Categories</a></li>
+          <li><a href="./store.html">Categories</a></li>
           <li><a href="#">Laptops</a></li>
           <li><a href="#">Smartphones</a></li>
           <li><a href="#">Cameras</a></li>
@@ -107,7 +107,7 @@
       <nav class="breadcrumb">
         <ul>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="">Category</a></li>
+          <li><a href="./store.html">Category</a></li>
           <li><a href="">Sub-Category</a></li>
           <li><span aria-current="page">Product</span></li>
         </ul>
@@ -146,7 +146,7 @@
             </div>
 
             <div class="summary__description">
-              <h1 class="medium-red-font">PRODUCT NAME</h1>
+              <h1 id='product-name' class="medium-red-font">PRODUCT NAME</h1>
               <div class="summary__review">
                 <div class="summary__stars small-red-font">
                   <i class="fas fa-star"></i>
@@ -162,8 +162,8 @@
               </div>
               <div class="summary__price">
                 <span>
-                  <span id="price__span" class="price-current">569$</span>
-                  <span id="price__span" class="price-before">569$</span>
+                  <span id="current__price__span" class="price-current">569$</span>
+                  <span id="old__price__span" class="price-before">569$</span>
                 </span>
                 <span class="small-red-font">In stock</span>
               </div>
@@ -179,7 +179,7 @@
                   <input type="number" min="1" />
                 </div>
 
-                <a href="" class="btn" id="add-to-cart"> ADD TO CART</a>
+                <a href="" class="btn" id="add-to-cart" > ADD TO CART</a>
               </div>
               <div class="summary__footer">
                 <div class="wishlist">
@@ -616,8 +616,8 @@
 								<h3 class="footer-title">About Us</h3>
 								<p>Lorem reprehenderit alias natus, deserunt, perspiciatis recusandae velit illum? Impedit laboriosam provident deleniti dolorem ea. </p>
 								<ul class="footer-links">
-									<li><a href="tel:+0201090963906"><i class="fa fa-phone"></i> +02-010-906-3906</a></li>
-									<li><a href="mailto:Electo@gmail.com"><i class="fa fa-envelope-o"></i> Electro@gmail.com</a></li>
+									<li><a href="tel:+0201029149153"><i class="fa fa-phone"></i> +02-010-291-49153</a></li>
+									<li><a href="mailto:random@gmail.com"><i class="fa fa-envelope-o"></i> random@gmail.com</a></li>
 									<li><a onclick="goPosition()"><i class="fa fa-map-marker"></i> Gleem Beach, San Stefano</a></li>
 								</ul>
 							</div>
