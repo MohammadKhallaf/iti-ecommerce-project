@@ -12,8 +12,9 @@
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 	<!-- Custom stlylesheet -->
-	<link rel="stylesheet" href="./css/mianStyle.css" />
 	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/mianStyle.css" />
 
 	<script src="https://kit.fontawesome.com/d0259d1f22.js" crossorigin="anonymous"></script>
 </head>
@@ -94,16 +95,16 @@
 			<div id="signin-form">
 				<p id="signinHead">Sign In</p>
 				<div class="signinForm_container">
-					<form action="./index.html">
+					<form action="./index.html" method="get">
 						<label for="username" id="username">UserName</label>
 						<input type="text" required placeholder="Enter Your Name" name="userNameInput"
 							id="yourNameInput" pattern="^[a-z]{3,} [a-z]{3,}$"><br>
 						<label for="password" id="password">Password</label>
-						<input type="password" id="passwordInput" name="passwordInput" required
+						<input type="password" id="passwordInput"  required
 							placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 						<br><input type="checkbox" id="show1" onclick="showpass1()">Show Password
 
-						<br> <input type="checkbox" id="rememberme">Remember me
+						<br> <input type="checkbox" id="rememberme1">Remember me
 						<br> <input type="submit" value="Sign in" id="signInButton">
 					</form>
 				</div>
@@ -111,7 +112,7 @@
 			<div id="signup-form">
 				<p id="signupHead">Sign Up</p>
 				<div class="signupForm_container">
-					<form action="./index.html">
+					<form action="./index.html" method="get">
 						<label id="yourName" for="yourName">
 							Your Name</label><br>
 						<input type="text" required placeholder="Enter Your Name" name="yourNameInput"
@@ -126,7 +127,7 @@
 						<!--An <input> element with type="password" that must contain 8 or more characters that
 					   are of at least one number, and one uppercase and lowercase letter-->
 						<label for="password" id="password">Password</label><br>
-						<input type="password" id="psw" name="passwordInput" required placeholder="Enter Password"
+						<input type="password" id="psw" required placeholder="Enter Password"
 							pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 						<br><input type="checkbox" class="show" onclick="showpass2()">Show Password
 						<div id="message">
@@ -139,10 +140,12 @@
 						</div>
 						<br> <label for="re-password" id="re-password">Re-Password</label>
 						<br>
-						<input type="password" id="re-passwordInput" name="re-passwordInput" required
+						<input type="password" id="re-passwordInput" required
 							placeholder="Re-enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="checkpass()">
 							<b id="matching">Matching</b>
 						<br><input type="checkbox" class="show" onclick="showpass3()">Show Password
+						<br> <input type="checkbox" id="rememberme2">Remember me
+
 
 						<br> <input type="submit" value="Sign up" id="signupsubmit">
 					</form>
