@@ -188,6 +188,10 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 2rem;
+  transition: all 0.2s ease;
+}
+.summary__buy .btn:hover {
+  transform: scale(1.2);
 }
 #add-to-cart:hover::before {
 }
@@ -238,7 +242,15 @@
   padding-right: 4px;
   padding-left: 4px;
   background: white;
+  color: gray;
+
 }
+.header_titles--active{
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--primary-color);
+  color: var(--primary-color) !important;
+}
+
 
 @media only screen and (max-width: 600px) {
   .details__header hr {

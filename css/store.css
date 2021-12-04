@@ -103,6 +103,44 @@ html {
 .side {
   grid-area: sidebar;
 }
+button.clear__btn{
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding-bottom: 1rem;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+  font-weight: bolder;
+  color: gray;
+  font-size: 1rem;
+}
+button.clear__btn:hover{
+  color: darkblue;
+}
+.category__item{
+  cursor: pointer;
+  padding-bottom: 1rem;
+ 
+}
+.category__item:hover{
+  color:rgb(0, 19, 104);
+}
+.category__item label{
+  cursor: pointer;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  /* padding-right: 1rem; */
+  border-radius: 0 1rem 1rem 0;
+  
+  font-size: 1.2rem;
+
+
+}
+.category__item input+label{
+}
+.category__item input:checked+label{
+  background: linear-gradient(0.25turn,rgba(0,0,0,0),rgb(245, 179, 179));
+}
 .ad {
   grid-area: ad;
 }
